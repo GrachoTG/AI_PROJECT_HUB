@@ -50,16 +50,29 @@ Zakres:
 
 ---
 
-### 2. GitHub / wersjonowanie
+### 2. GitHub versioning
 
-Status: `after_backup`
+Status: `done`
 
 Zakres:
-- utworzyć prywatne repozytorium GitHub,
-- zainicjować Git w folderze vaulta,
-- dodać `.gitignore`,
-- wykonać pierwszy commit,
-- wypchnąć repozytorium na GitHub.
+- [x] utworzono prywatne repozytorium GitHub,
+- [x] zainicjalizowano lokalne repozytorium Git,
+- [x] skonfigurowano branch `main`,
+- [x] skonfigurowano lokalny `user.name`,
+- [x] skonfigurowano lokalny email Git,
+- [x] utworzono `.gitignore`,
+- [x] dodano remote `origin`,
+- [x] wykonano pierwszy commit,
+- [x] wykonano pierwszy push,
+- [x] ustawiono śledzenie `main -> origin/main`.
+
+Repozytorium:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+Następne zadanie:
+
+`daily_git_workflow_setup`
 
 ---
 

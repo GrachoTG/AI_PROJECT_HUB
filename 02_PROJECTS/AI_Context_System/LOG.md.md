@@ -76,3 +76,38 @@ Sprawdzono, że backup zawiera główne foldery:
 Status etapu: `backup_before_github` zakończony.
 
 Następny etap: `github_versioning`.
+## 2026-05-26 — Zakończenie etapu GitHub versioning
+
+Zakończono etap `github_versioning`.
+
+Wykonano pełną konfigurację wersjonowania folderu głównego Obsidian:
+
+`D:\obsidian\sejf\AI_PROJECT_HUB`
+
+Repozytorium GitHub:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+Zakres wykonanych działań:
+- utworzono prywatne repozytorium GitHub,
+- zainicjalizowano lokalne repozytorium Git na branchu `main`,
+- skonfigurowano lokalnie `user.name=Teddy`,
+- skonfigurowano lokalny email Git,
+- utworzono `.gitignore`,
+- dodano remote `origin`,
+- wykonano commit:
+
+  `Initial commit - AI project hub structure`
+
+- wykonano push do GitHub,
+- ustawiono śledzenie:
+
+  `main -> origin/main`
+
+Status:
+
+`github_versioning_completed`
+
+Następny etap:
+
+`daily_git_workflow_setup`

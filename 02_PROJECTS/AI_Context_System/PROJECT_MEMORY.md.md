@@ -165,3 +165,36 @@ Minimalny warunek bezpieczeństwa przed przejściem do GitHub został spełniony
 Następny etap projektu:
 
 `github_versioning`
+## 2026-05-26 — GitHub versioning zakończony
+
+Etap `github_versioning` został zakończony.
+
+Vault Obsidian / folder główny projektu:
+
+`D:\obsidian\sejf\AI_PROJECT_HUB`
+
+został połączony z prywatnym repozytorium GitHub:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+Wykonano konfigurację Git:
+
+- repozytorium lokalne zainicjalizowane na branchu `main`,
+- skonfigurowano lokalnie `user.name=Teddy`,
+- skonfigurowano lokalny email Git,
+- dodano remote `origin`,
+- wykonano pierwszy commit,
+- wykonano pierwszy push do GitHub,
+- branch `main` śledzi `origin/main`.
+
+Pierwszy commit:
+
+`Initial commit - AI project hub structure`
+
+Status etapu:
+
+`github_versioning_completed`
+
+Następny etap:
+
+`daily_git_workflow_setup`

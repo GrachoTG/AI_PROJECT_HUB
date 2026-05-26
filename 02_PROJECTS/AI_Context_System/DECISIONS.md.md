@@ -78,3 +78,30 @@ Planowane rozwiązanie:
 Konsekwencje:
 - Przed większymi zmianami należy tworzyć commit.
 - Kluczowe wersje systemu powinny być oznaczane jako stabilne.
+## 2026-05-26 — Prywatne repozytorium GitHub dla AI_PROJECT_HUB
+
+Podjęto decyzję o używaniu prywatnego repozytorium GitHub jako systemu wersjonowania folderu głównego Obsidian:
+
+`D:\obsidian\sejf\AI_PROJECT_HUB`
+
+Repozytorium:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+Uzasadnienie:
+- kontrola wersji dla plików projektowych i kontekstowych,
+- możliwość cofania zmian,
+- ochrona przed przypadkową utratą struktury,
+- lepsza synchronizacja pracy między sesjami AI,
+- prywatność danych dzięki repozytorium prywatnemu.
+
+Zasady:
+- backup lokalny pozostaje obowiązkowy przed większymi zmianami,
+- folder `99_BACKUPS/` nie jest wersjonowany,
+- pliki cache/workspace Obsidian nie są wersjonowane,
+- commit powinien być wykonywany po istotnych zmianach w systemie,
+- push do GitHub powinien być wykonywany po zakończonym bloku pracy.
+
+Status decyzji:
+
+`active`
