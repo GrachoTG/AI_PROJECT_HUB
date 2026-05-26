@@ -143,3 +143,32 @@ Status:
 Następny możliwy etap:
 
 `context_refresh_protocol`
+## 2026-05-26 — Utworzenie Context Refresh Protocol
+
+Utworzono plik:
+
+`02_PROJECTS/AI_Context_System/CONTEXT_REFRESH_PROTOCOL.md`
+
+Powód:
+- nowe sesje AI wymagają szybkiego odtworzenia kontekstu,
+- projekt ma kilka plików źródłowych,
+- bez stałej procedury rośnie ryzyko zgadywania i utraty kontekstu.
+
+Zakres procedury:
+- źródła prawdy,
+- kolejność czytania plików,
+- pełny komunikat startowy dla AI,
+- minimalny start awaryjny,
+- zasada aktualizacji dokumentacji po sesji,
+- checklista końca sesji,
+- procedura końca sesji,
+- standardowy komunikat startowy,
+- zasady anty-chaos.
+
+Status:
+
+`context_refresh_protocol_created`
+
+Następny krok:
+
+`context_refresh_protocol_docs_update`

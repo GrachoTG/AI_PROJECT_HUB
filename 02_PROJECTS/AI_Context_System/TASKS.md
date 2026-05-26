@@ -135,3 +135,32 @@ Status etapu:
 Następne możliwe zadanie:
 
 `context_refresh_protocol`
+### 4. Context Refresh Protocol
+
+Status: `docs_updated`
+
+Zakres:
+- [x] utworzono `CONTEXT_REFRESH_PROTOCOL.md`,
+- [x] opisano cel procedury,
+- [x] opisano kiedy używać procedury,
+- [x] wskazano źródła prawdy,
+- [x] opisano pełny start nowej sesji AI,
+- [x] opisano minimalny start awaryjny,
+- [x] opisano zasadę aktualizacji po sesji,
+- [x] dodano checklistę końca sesji,
+- [x] opisano procedurę końca sesji,
+- [x] dodano standardowy komunikat startowy,
+- [x] dodano zasady anty-chaos,
+- [x] zaktualizować `LOG.md`,
+- [x] zaktualizować `NEXT_CONTEXT.md`,
+- [ ] wykonać commit,
+- [ ] wykonać push do GitHub.
+
+Status etapu:
+
+`context_refresh_protocol_docs_updated`
+
+Następny krok:
+
+`context_refresh_protocol_git_commit`
+
