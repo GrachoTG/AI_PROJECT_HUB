@@ -1,0 +1,22 @@
+﻿# Obsidian workspace/cache files
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/*/data.json
+
+# OS/system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+~$*
+
+# Logs
+*.log
+
+# Local backups inside vault
+99_BACKUPS/
