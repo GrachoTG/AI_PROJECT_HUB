@@ -1,88 +1,108 @@
 # NEXT_CONTEXT — AI_Context_System
 
-## Status projektu
+## Aktualny status
 
-Projekt: `AI_Context_System`
+Status projektu:
 
-Aktualny etap: `github_versioning_completed`
+`daily_git_workflow_setup_completed`
 
-## Ostatnio zakończony etap
+Zakończone etapy:
+- `manual_backup_completed`
+- `github_versioning_completed`
+- `daily_git_workflow_setup_completed`
 
-Zakończono etap:
-
-`github_versioning`
-
-## Co zostało wykonane
-
-1. Utworzono prywatne repozytorium GitHub:
-
-   `https://github.com/GrachoTG/AI_PROJECT_HUB.git`
-
-2. Skonfigurowano lokalne repozytorium Git dla folderu:
-
-   `D:\obsidian\sejf\AI_PROJECT_HUB`
-
-3. Skonfigurowano:
-
-   - branch: `main`
-   - `user.name=Teddy`
-   - lokalny email Git
-
-4. Utworzono `.gitignore`, który ignoruje m.in.:
-
-   - pliki workspace/cache Obsidian,
-   - pliki systemowe,
-   - pliki tymczasowe,
-   - logi,
-   - folder `99_BACKUPS/`
-
-5. Wykonano pierwszy commit:
-
-   `Initial commit - AI project hub structure`
-
-6. Wykonano pierwszy push do GitHub.
-
-7. Branch lokalny `main` śledzi branch zdalny `origin/main`.
-
-## Aktualny stan
-
-Repozytorium GitHub działa.
-
-Lokalny vault Obsidian:
-
-`D:\obsidian\sejf\AI_PROJECT_HUB`
-
-jest połączony z prywatnym repozytorium:
+Repozytorium GitHub:
 
 `https://github.com/GrachoTG/AI_PROJECT_HUB.git`
 
-Etap `github_versioning` jest zakończony.
+Folder lokalny:
 
-## Ważne zasady pracy
+`D:\obsidian\sejf\AI_PROJECT_HUB`
 
-- Odpowiadać krótko.
-- Prowadzić użytkownika krok po kroku.
-- Jedno zadanie naraz.
-- Nie zakładać dostępu do plików lokalnych.
-- Jeśli potrzebny jest kontekst z Obsidiana, poprosić o wklejenie konkretnych plików.
-- Priorytetem jest praktyczne wdrożenie, nie teoria.
-- Stosować filtr rozproszeń: każde działanie ma wspierać aktywne biznesy albo system zarządzania nimi.
+---
 
-## Następny logiczny krok
+## Co zostało zrobione
 
-Zaktualizować pamięć projektu po zakończeniu GitHub:
+Wykonano:
+- ręczny backup folderu `AI_PROJECT_HUB`,
+- konfigurację prywatnego repozytorium GitHub,
+- inicjalizację lokalnego Git,
+- pierwszy commit i push,
+- procedurę codziennej pracy z Git w pliku `GIT_WORKFLOW.md`,
+- commit i push procedury Git workflow,
+- aktualizację dokumentacji projektowej.
 
-1. `PROJECT_MEMORY.md`
-2. `TASKS.md`
-3. `LOG.md`
-4. opcjonalnie `DECISIONS.md`
+---
 
-## Zadanie dla następnej sesji
+## Ważne pliki
 
-Rozpocząć od aktualizacji:
+```text
+02_PROJECTS/AI_Context_System/PROJECT_MEMORY.md
+02_PROJECTS/AI_Context_System/TASKS.md
+02_PROJECTS/AI_Context_System/LOG.md
+02_PROJECTS/AI_Context_System/DECISIONS.md
+02_PROJECTS/AI_Context_System/GIT_WORKFLOW.md
+```
 
-`02_PROJECTS/AI_Context_System/PROJECT_MEMORY.md`
+---
 
-o zakończenie etapu:
+## Obowiązujące zasady
 
-`github_versioning`
+Praca z tym projektem ma być prowadzona według zasad:
+- jedno zadanie na raz,
+- prosto, bez przeinżynierowania,
+- najpierw backup / Git przy większych zmianach,
+- dokumentować decyzje,
+- commit po istotnym bloku pracy,
+- push po zakończeniu sesji,
+- nie commitować backupów, cache, tokenów, haseł ani kluczy API.
+
+---
+
+## Standardowa procedura Git
+
+```powershell
+cd "D:\obsidian\sejf\AI_PROJECT_HUB"
+git status
+git add .
+git commit -m "Opis zmian"
+git push
+```
+
+Szczegóły:
+
+```text
+02_PROJECTS/AI_Context_System/GIT_WORKFLOW.md
+```
+
+---
+
+## Następny możliwy etap
+
+`context_refresh_protocol`
+
+Cel:
+- stworzyć prostą procedurę odświeżania kontekstu dla nowych sesji AI,
+- określić, które pliki AI ma czytać na starcie,
+- określić, jak kończyć sesję,
+- ograniczyć utratę kontekstu między rozmowami.
+
+---
+
+## Start kolejnej sesji
+
+Na początku kolejnej sesji AI wklej:
+
+```text
+Pracujemy nad AI_Context_System.
+Przeczytaj kontekst z:
+- NEXT_CONTEXT.md
+- PROJECT_MEMORY.md
+- TASKS.md
+- LOG.md
+- DECISIONS.md
+- GIT_WORKFLOW.md
+
+Aktualny status: daily_git_workflow_setup_completed.
+Kontynuujemy od etapu: context_refresh_protocol.
+```

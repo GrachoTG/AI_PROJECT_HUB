@@ -108,3 +108,30 @@ Zakres:
 Powód:
 Najpierw musi istnieć stabilny backup i wersjonowanie.
 
+### 3. Daily Git workflow
+
+Status: `done`
+
+Zakres:
+- [x] utworzono `GIT_WORKFLOW.md`,
+- [x] opisano standardowy workflow Git,
+- [x] opisano szybką procedurę po pracy,
+- [x] opisano procedurę przed rozpoczęciem pracy,
+- [x] opisano zasady tworzenia commitów,
+- [x] opisano czego nie commitować,
+- [x] opisano procedurę awaryjną,
+- [x] opisano procedurę końca sesji AI,
+- [x] wykonano commit,
+- [x] wykonano push do GitHub.
+
+Commit:
+
+`Add daily Git workflow procedure`
+
+Status etapu:
+
+`daily_git_workflow_setup_completed`
+
+Następne możliwe zadanie:
+
+`context_refresh_protocol`
