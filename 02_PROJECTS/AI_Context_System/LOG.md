@@ -172,3 +172,13 @@ Status:
 Następny krok:
 
 `context_refresh_protocol_docs_update`
+## 2026-05-27 — Context Loader MVP uruchomiony
+
+- Uporządkowano rozszerzenia plików Markdown: `*.md.md` → `*.md`.
+- Zaktualizowano `tools/build_context.py` do nowych ścieżek.
+- Potwierdzono, że `tools/build_context.py` jest śledzony przez Git.
+- Wygenerowano `AI_START_PROMPT.md` jako działający plik startowy dla nowych sesji AI.
+- Usunięto lub wyłączono z pracy stary snapshot `VAULT_CONTENT_EXPORT.md`.
+- Potwierdzono czysty stan repozytorium: `working tree clean`.
+
+Status: zakończone.

@@ -1,6 +1,6 @@
 # AI_START_PROMPT
 
-Generated: 2026-05-27 11:15:35
+Generated: 2026-05-27 11:26:30
 
 ## Instrukcja dla AI
 
@@ -826,74 +826,42 @@ Jeżeli nie wspiera żadnego aktywnego projektu ani celu strategicznego, powinie
 
 ## Aktualny status
 
-`context_refresh_protocol_docs_updated`
+Context Loader MVP został uruchomiony.
 
-## Ostatnio zakończone
+Działa lokalny workflow:
 
-Utworzono:
+```text
+python .\tools\build_context.py
+```
 
-`02_PROJECTS/AI_Context_System/CONTEXT_REFRESH_PROTOCOL.md`
+generujący:
 
-Zaktualizowano:
-- `PROJECT_MEMORY.md`
-- `TASKS.md`
-- `LOG.md`
+```text
+AI_START_PROMPT.md
+```
 
-Context Refresh Protocol opisuje:
-- źródła prawdy,
-- kolejność czytania plików,
-- pełny start nowej sesji AI,
-- minimalny start awaryjny,
-- zasadę aktualizacji dokumentacji po sesji,
-- checklistę końca sesji,
-- procedurę końca sesji,
-- standardowy komunikat startowy,
-- zasady anty-chaos.
+Repozytorium jest czyste, a loader jest śledzony przez Git.
 
-## Następne zadanie
+## Najbliższe zadanie
 
-Wykonać commit i push zmian do GitHub.
+Przetestować pełny cykl pracy:
 
-Status etapu:
+1. uruchomić `tools/build_context.py`,
+2. otworzyć nowy czat AI,
+3. wkleić zawartość `AI_START_PROMPT.md`,
+4. sprawdzić, czy AI poprawnie odtwarza:
+   - cel projektu,
+   - aktualny status,
+   - zasady pracy,
+   - jedno następne zadanie.
 
-`context_refresh_protocol_docs_updated`
+## Nie robić teraz
 
-Następny krok:
-
-`context_refresh_protocol_git_commit`
-
-## Instrukcja dla następnej sesji AI
-
-Pracujemy nad:
-
-`AI_Context_System`
-
-Przeczytaj w kolejności:
-
-1. `02_PROJECTS/AI_Context_System/NEXT_CONTEXT.md`
-2. `02_PROJECTS/AI_Context_System/PROJECT_MEMORY.md`
-3. `02_PROJECTS/AI_Context_System/TASKS.md`
-4. `02_PROJECTS/AI_Context_System/LOG.md`
-5. `02_PROJECTS/AI_Context_System/DECISIONS.md`
-6. `02_PROJECTS/AI_Context_System/GIT_WORKFLOW.md`
-7. `02_PROJECTS/AI_Context_System/CONTEXT_REFRESH_PROTOCOL.md`
-
-Zasady pracy:
-- jedno zadanie na raz,
-- krótko i konkretnie,
-- bez przeinżynierowania,
-- priorytet: przychód, oszczędność czasu, redukcja chaosu,
-- darmowe rozwiązania preferowane,
-- nie zmieniaj struktury folderów bez decyzji,
-- nie proponuj nowych narzędzi bez potrzeby,
-- aktualizuj dokumentację po istotnych zmianach,
-- commit po istotnym bloku pracy,
-- push po zakończeniu sesji.
-
-Najpierw:
-1. Podsumuj aktualny stan projektu.
-2. Wskaż jedno następne zadanie.
-3. Nie zaczynaj kilku wątków naraz.
+- Nie wdrażać jeszcze RAG.
+- Nie wdrażać n8n.
+- Nie wdrażać agentów.
+- Nie komplikować struktury.
+- Nie dodawać nowych narzędzi bez potrzeby.
 
 ```
 
@@ -1216,6 +1184,45 @@ Status etapu:
 Następny możliwy etap:
 
 `context_refresh_protocol`
+## Context Loader MVP
+
+Projekt posiada działający minimalny loader kontekstu:
+
+```text
+tools/build_context.py
+```
+
+Loader czyta kluczowe pliki systemowe, globalne i projektowe z Vaulta Obsidian oraz generuje:
+
+```text
+AI_START_PROMPT.md
+```
+
+Plik `AI_START_PROMPT.md` jest używany jako startowy kontekst dla nowej sesji AI.
+
+Ustalony workflow:
+
+```text
+Vault Obsidian
+→ tools/build_context.py
+→ AI_START_PROMPT.md
+→ nowy czat AI
+→ praca nad zadaniem
+→ aktualizacja pamięci projektu
+→ commit/push
+```
+
+W ramach porządkowania struktury ujednolicono rozszerzenia plików Markdown:
+
+```text
+*.md.md → *.md
+```
+
+Od tego momentu nowe pliki Markdown powinny używać wyłącznie rozszerzenia:
+
+```text
+.md
+```
 
 ```
 

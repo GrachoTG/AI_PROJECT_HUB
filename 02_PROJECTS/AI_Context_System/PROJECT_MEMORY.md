@@ -229,3 +229,42 @@ Status etapu:
 Następny możliwy etap:
 
 `context_refresh_protocol`
+## Context Loader MVP
+
+Projekt posiada działający minimalny loader kontekstu:
+
+```text
+tools/build_context.py
+```
+
+Loader czyta kluczowe pliki systemowe, globalne i projektowe z Vaulta Obsidian oraz generuje:
+
+```text
+AI_START_PROMPT.md
+```
+
+Plik `AI_START_PROMPT.md` jest używany jako startowy kontekst dla nowej sesji AI.
+
+Ustalony workflow:
+
+```text
+Vault Obsidian
+→ tools/build_context.py
+→ AI_START_PROMPT.md
+→ nowy czat AI
+→ praca nad zadaniem
+→ aktualizacja pamięci projektu
+→ commit/push
+```
+
+W ramach porządkowania struktury ujednolicono rozszerzenia plików Markdown:
+
+```text
+*.md.md → *.md
+```
+
+Od tego momentu nowe pliki Markdown powinny używać wyłącznie rozszerzenia:
+
+```text
+.md
+```
