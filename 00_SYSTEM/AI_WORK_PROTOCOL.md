@@ -47,3 +47,38 @@ krótko i konkretnie
 NAJPROSTSZY NASTĘPNY KROK:
 jedna rzecz do wykonania
 
+## AKTUALIZACJA OBSIDIAN — 2026-06-26 15:58
+
+### Plik
+`00_SYSTEM/AI_WORK_PROTOCOL.md`
+
+### Działanie
+Dodano i zapisano w repozytorium główny protokół pracy AI.
+
+### Treść
+Utworzono poprawny plik protokołu:
+
+`00_SYSTEM/AI_WORK_PROTOCOL.md`
+
+Usunięto błędne duplikaty z katalogu głównego:
+
+- `AI_WORK_PROTOCOL.md.md`
+- `AI_WORK_PROTOCOL.md`
+
+Zatwierdzono i wypchnięto zmiany do GitHub:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+### Wersja
+- branch: `main`
+- commit: `032fc49`
+
+### Status Git
+Repozytorium zsynchronizowane z GitHubem.
+
+### Następny krok
+Przejść do automatyzacji przepływu:
+
+`Obsidian → GitHub → n8n/VPS`
+
+Najpierw ustalić bezpieczny mechanizm aktualizacji repozytorium bez przekazywania tokenów i sekretów w czacie.
