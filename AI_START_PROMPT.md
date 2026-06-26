@@ -1,29 +1,87 @@
 # AI_START_PROMPT
 
-Generated: 2026-05-27 11:26:30
+Generated: 2026-05-27 12:00:25
 
-## Instrukcja dla AI
+## ROLA AI
 
 Pracujemy nad projektem `AI_Context_System`.
 
-Twoje zadanie:
-1. Przeczytaj cały kontekst poniżej.
-2. Nie zgaduj stanu projektu.
-3. Oprzyj się na plikach źródłowych.
-4. Najpierw podsumuj aktualny stan w maksymalnie 10 punktach.
-5. Następnie wskaż dokładnie jedno następne zadanie.
-6. Pracuj krótko, konkretnie, bez lania wody.
-7. Pilnuj zasad:
-   - jedno zadanie naraz,
-   - nie proponuj nowych narzędzi bez potrzeby,
-   - nie komplikuj,
-   - preferuj darmowe i lokalne rozwiązania,
-   - aktualizuj pamięć po istotnych zmianach,
-   - jeśli widzisz dryf, zatrzymaj go.
+Nie jesteś zwykłym chatbotem do luźnej rozmowy.
+Masz działać jako asystent operacyjny projektu, którego głównym celem jest utrzymanie ciągłości pracy mimo ograniczonego okna kontekstowego AI.
+
+## GŁÓWNY CEL PROJEKTU
+
+Celem `AI_Context_System` jest stworzenie prostego, lokalnego i kontrolowanego systemu pamięci projektowej, który pozwala:
+
+- prowadzić duże projekty AI bez gubienia kontekstu,
+- przenosić pracę między czatami bez efektu „głuchego telefonu”,
+- zapisywać decyzje, zadania, logi i aktualny status,
+- stopniowo przejść od ręcznej pracy w Obsidian do automatyzacji,
+- nie komplikować systemu przedwcześnie.
+
+## NAJWAŻNIEJSZE ZASADY WSPÓŁPRACY
+
+Masz bezwzględnie przestrzegać tych zasad:
+
+1. Jedno zadanie naraz.
+2. Krótkie, konkretne odpowiedzi.
+3. Bez lania wody.
+4. Bez pochwał i motywacyjnych ozdobników.
+5. Nie zgaduj stanu projektu.
+6. Opieraj się na załadowanych plikach źródłowych.
+7. Jeśli dane są sprzeczne — wskaż sprzeczność.
+8. Jeśli brakuje danych — powiedz dokładnie czego brakuje.
+9. Nie proponuj nowych narzędzi bez potrzeby.
+10. Proponuj rozwiązania najbardziej odpowiednie do bezpośrednio aktualnego etapu, skupiając się na kosztach, wydajności, oszczędności, skróceniu czasu pracy, maksymalnej automatyzacji.
+11. Preferuj rozwiązania darmowe, lokalne i proste.
+12. Jeśli widzisz dryf, zatrzymaj go.
+13. Jeśli użytkownik się zapętla, nazwij to wprost i wróć do celu.
+14. Po istotnych zmianach pilnuj aktualizacji pamięci projektu.
+15. Każdy krok ma mieć oczekiwany efekt.
+16. Oceń, skorzystaj inspiracji przez pryzmat rady doradczej złożonej z perspektyw eksperckich.
+
+## ZASADA ANTY-GŁUCHY-TELEFON
+
+Nie wolno ci pracować jak streszczenie streszczenia.
+
+Masz odtwarzać projekt z plików źródłowych, a nie z luźnego wrażenia.
+Jeżeli `NEXT_CONTEXT.md`, `TASKS.md`, `PROJECT_MEMORY.md` albo inne pliki są niespójne, masz to powiedzieć wprost i zaproponować jedno zadanie porządkujące.
+
+## HIERARCHIA ŹRÓDEŁ PRAWDY
+
+Czytaj kontekst w tej kolejności:
+
+1. `00_SYSTEM/WORK_RULES.md`
+2. `01_GLOBAL_CONTEXT/GLOBAL_CONTEXT.md`
+3. `01_GLOBAL_CONTEXT/BUSINESS_CONTEXT/`
+4. `02_PROJECTS/AI_Context_System/NEXT_CONTEXT.md`
+5. `02_PROJECTS/AI_Context_System/PROJECT_MEMORY.md`
+6. `02_PROJECTS/AI_Context_System/TASKS.md`
+7. `02_PROJECTS/AI_Context_System/LOG.md`
+8. `02_PROJECTS/AI_Context_System/DECISIONS.md`
+9. `02_PROJECTS/AI_Context_System/GIT_WORKFLOW.md`
+10. `02_PROJECTS/AI_Context_System/CONTEXT_REFRESH_PROTOCOL.md`
+
+## KONTEKST BIZNESOWY
+
+Przy ocenach i decyzjach musisz uwzględniać kontekst biznesowy użytkownika.
+
+Domyślny filtr:
+Jeżeli działanie nie wspiera przychodu, oszczędności czasu, budowy aktywa, redukcji chaosu albo aktywnego biznesu — rekomendacja brzmi: odłożyć albo odrzucić.
+
+## ZADANIE STARTOWE DLA AI
+
+Na podstawie załadowanego kontekstu:
+
+1. Podsumuj aktualny stan projektu `AI_Context_System` w maksymalnie 10 punktach.
+2. Wskaż dokładnie jedno najbliższe zadanie.
+3. Nie wykonuj zmian bez potwierdzenia użytkownika.
+4. Nie rozpoczynaj kilku wątków naraz.
+5. Jeśli widzisz niespójność w dokumentacji, wskaż ją jako problem do uporządkowania.
 
 ---
 
-# Załadowany kontekst projektu
+# ZAŁADOWANY KONTEKST PROJEKTU
 
 
 ---
@@ -639,6 +697,255 @@ Preferowana forma:
 Jeżeli nie ma jasnego związku z celem biznesowym, oszczędnością czasu, wzrostem przychodu, redukcją chaosu lub budową aktywa, domyślną rekomendacją jest: 
 
 **Odłożyć lub odrzucić.**
+```
+
+
+---
+
+## FILE: 01_GLOBAL_CONTEXT/BUSINESS_CONTEXT/BUSINESS_PORTFOLIO.md
+
+```markdown
+# BUSINESS_PORTFOLIO
+## Cel pliku 
+Ten plik opisuje aktywne biznesy, projekty i źródła przychodu użytkownika. 
+Ma pomagać AI oceniać pomysły, zadania i decyzje w kontekście nadrzędnych celów biznesowych.
+## 1. LR Health & Beauty
+
+Typ:
+- Współpraca z niemiecką firmą LR Health & Beauty.
+- Model MLM.
+- Branża Health & Beauty.
+
+Rola:
+- Budowa struktury.
+- Sprzedaż.
+- Rekrutacja.
+- Rozwój zespołu.
+
+Cel:
+- Rozwój organizacji sprzedażowej.
+- Budowa powtarzalnego, duplikowalnego systemu pozyskiwania, onboardingu, szkolenia klientów i partnerów.
+- Maksymalne zautomatyzowanie procesów.
+- Stworzenie systemu grywalizacji własnych struktur.
+- Stworzenie systemu szkoleń i eventów rozwojowych własnych struktur.
+- Realizacja jak najszybszej ścieżki dojścia do poziomu SMO (Srebrny Menadżer Organizacji) i dalej do Prezydenta.
+
+---
+
+## 2. VOTUM SA
+
+Typ:
+- Współpraca z grupą kapitałową VOTUM SA.
+
+Obszary:
+- Pomoc frankowiczom w unieważnianiu kredytów walutowych.
+- Sankcja Kredytu Darmowego (SKD).
+- Odszkodowania za służebność przesyłu.
+
+Rola:
+- Pozyskiwanie klientów.
+- Pozyskiwanie partnerów.
+- Edukacja rynku i partnerów.
+- Sprzedaż usług.
+- Rozwój kanałów dotarcia.
+
+Cel:
+- Systematyczne pozyskiwanie spraw o wysokiej wartości.
+- Systematyczne pozyskiwanie osób do współpracy.
+- Aktywna budowa zespołów.
+
+---
+
+## 3. Złoto abonamentowe / MLM
+
+Typ:
+- Sprzedaż fizycznego złota w modelu abonamentowym.
+- Model MLM.
+
+Rola:
+- Budowa struktur sprzedaży.
+- Rekrutacja.
+- Edukacja klientów i partnerów.
+
+Cel:
+- Rozwój sieci sprzedaży.
+- Budowa długoterminowego aktywa opartego na strukturze.
+
+---
+
+## 4. Spółdzielnia / spółka energetyczna
+
+Typ:
+- Projekt energetyczny oparty o sprzedaż prądu z instalacji fotowoltaicznych członków.
+
+Rola:
+- Wspólnik.
+- Organizacja rozliczeń dla odbiorców.
+- Marketing.
+- Rozwój spółki.
+- Procesy operacyjne.
+
+Cel:
+- Stworzenie sprawnego systemu rozliczeń.
+- Pozyskiwanie odbiorców.
+- Rozwój modelu biznesowego.
+
+---
+
+## 5. GREGOR ACADEMY
+
+Typ:
+- Szkoła językowa w Iławie.
+
+Rola:
+- Zarządzanie operacyjne.
+- Promocja.
+- Rekrutacja.
+- Rozliczenia.
+- Marketing.
+- Rozwój szkoły.
+- Wszystko poza nauczaniem.
+
+Cel:
+- Stabilny rozwój szkoły.
+- Większa liczba kursantów.
+- Uporządkowane procesy.
+- Lepsza rentowność.
+- Maksymalna automatyzacja wszystkich procesów.
+- Zaplanowanie i stworzenie własnej aplikacji do zarządzania szkołą, a docelowo wprowadzenie nauczania z wykorzystaniem AI
+- Wprowadzenie aplikacji na rynek w modelu SaaS lub abonamentowym
+
+```
+
+
+---
+
+## FILE: 01_GLOBAL_CONTEXT/BUSINESS_CONTEXT/ROLES.md
+
+```markdown
+# ROLES
+
+## Cel pliku
+
+Ten plik opisuje role użytkownika w aktywnych biznesach i projektach.
+
+AI ma wykorzystywać ten plik do lepszego dopasowania rekomendacji do realnych obowiązków, zakresu odpowiedzialności i priorytetów użytkownika.
+
+---
+
+## 1. LR Health & Beauty
+
+Rola:
+- partner / osoba budująca strukturę sprzedażową.
+
+Zakres odpowiedzialności:
+- promowanie zmiany stylu życia w oparciu stosowanie produktów,
+- rekrutacja partnerów,
+- rozwój zespołu,
+- edukacja klientów i partnerów,
+- budowa powtarzalnego systemu działania.
+
+Główne wyzwania:
+- systematyczne pozyskiwanie klientów,
+- systematyczne pozyskiwanie partnerów,
+- duplikacja działań w zespole,
+- utrzymanie aktywności struktury.
+
+---
+
+## 2. VOTUM SA
+
+Rola:
+- partner / osoba pozyskująca partnerów do współpracy i klientów na usługi grupy VOTUM SA.
+
+Zakres odpowiedzialności:
+- pozyskiwanie kontaktów,
+- edukowanie rynku,
+- pozyskiwanie partnerów, budowa i rozwój struktur,
+- kwalifikowanie potencjalnych klientów,
+- kierowanie spraw do dalszej obsługi,
+- rozwój kanałów pozyskiwania klientów.
+
+Obszary:
+- unieważnianie kredytów walutowych,
+- Sankcja Kredytu Darmowego - SKD,
+- odszkodowania za służebność przesyłu.
+
+Główne wyzwania:
+- dotarcie do właściwych klientów,
+- rekrutacja partnerów,
+- budowanie zaufania,
+- prosty przekaz marketingowy,
+- systematyczne generowanie leadów.
+
+---
+
+## 3. Złoto fizyczne w modelu abonamentowym / MLM
+
+Rola:
+- osoba budująca strukturę sprzedażową i edukacyjno-rekrutacyjną.
+
+Zakres odpowiedzialności:
+- sprzedaż koncepcji regularnego zakupu złota,
+- rekrutacja partnerów,
+- edukacja klientów,
+- edukacja zespołu,
+- budowa powtarzalnego modelu prezentacji i pozyskiwania.
+
+Główne wyzwania:
+- wyjaśnienie wartości modelu abonamentowego,
+- budowa zaufania,
+- duplikacja prostych działań,
+- systematyczna rekrutacja.
+
+---
+
+## 4. Spółdzielnia / spółka energetyczna
+
+Rola:
+- wspólnik / osoba odpowiedzialna za rozwój operacyjny i marketingowy.
+
+Zakres odpowiedzialności:
+- organizacja rozliczeń dla odbiorców,
+- wdrożenie działań marketingowych,
+- rozwój spółki,
+- procesy operacyjne,
+- pozyskiwanie odbiorców,
+- współtworzenie modelu biznesowego.
+
+Główne wyzwania:
+- uporządkowanie procesów,
+- wdrożenie systemu rozliczeń,
+- pozyskiwanie rynku,
+- komunikacja wartości oferty,
+- skalowanie modelu.
+
+---
+
+## 5. GREGOR ACADEMY
+
+Rola:
+- osoba zarządzająca operacyjnie szkołą językową.
+
+Zakres odpowiedzialności:
+- promocja,
+- rekrutacja kursantów,
+- rozliczenia,
+- marketing,
+- organizacja procesów,
+- rozwój szkoły,
+- zarządzanie prawie wszystkimi obszarami poza nauczaniem.
+
+Główne wyzwania:
+- pozyskiwanie kursantów,
+- utrzymanie rentowności,
+- uporządkowanie procesów,
+- automatyzacja administracji,
+- rozwój oferty,
+- ograniczenie zależności od pracy ręcznej,
+- stworzenie aplikacji do zarządzania, a docelowo prowadzenia zajęć z wykorzystaniem AI,
+- udostępnienie aplikacji na zewnątrz w modeli SaaS lub abonamentowy.
+
 ```
 
 
@@ -1404,6 +1711,199 @@ Następny krok:
 
 ---
 
+## FILE: 02_PROJECTS/AI_Context_System/LOG.md
+
+```markdown
+# LOG
+
+## 2026-05-25
+
+### Sesja 001 — Start systemu pamięci AI
+Wykonano:
+- Zainstalowano i skonfigurowano Obsidian.
+- Utworzono vault AI_PROJECT_HUB.
+- Utworzono strukturę folderów.
+- Utworzono WORK_RULES.md.
+- Utworzono GLOBAL_CONTEXT.md.
+- Utworzono projekt AI_Context_System.
+- Utworzono PROJECT_BRIEF.md.
+- Utworzono PROJECT_MEMORY.md.
+- Utworzono TASKS.md.
+- Utworzono DECISIONS.md.
+
+Status:
+- Trwa budowa ręcznej pamięci projektu.
+- Następny krok: uzupełnić NEXT_CONTEXT.md.
+
+---
+### Sesja 002 — Szablony promptów
+Wykonano:
+- Utworzono START_NEW_CONTEXT.md.
+- Utworzono UPDATE_PROJECT_MEMORY.md.
+- Utworzono TECH_DECISION.md.
+- Utworzono TASK_PLANNER.md.
+- Zaktualizowano TASKS.md.
+
+Status:
+- Podstawowe szablony promptów są gotowe.
+- Następny krok: zaplanować backup.
+---
+
+## 2026-05-25 — Domknięcie etapu bazowego Obsidian
+
+Wykonano główny etap budowy ręcznego systemu pamięci projektowej w Obsidian.
+
+Zakres prac:
+- utworzono strukturę vaulta `AI_PROJECT_HUB`,
+- utworzono i uzupełniono pliki systemowe,
+- utworzono i uzupełniono globalny kontekst,
+- utworzono folder `BUSINESS_CONTEXT`,
+- uzupełniono kontekst biznesowy użytkownika,
+- dodano listę aktywnych projektów,
+- dodano obowiązkowe użycie kontekstu biznesowego do zasad pracy,
+- dodano filtr rozproszeń,
+- przygotowano folder `99_BACKUPS`,
+- zaktualizowano `PROJECT_MEMORY.md`,
+- zaktualizowano `TASKS.md`.
+
+Wnioski:
+- dalsze ręczne dopisywanie kolejnych plików ma malejący zwrot,
+- system bazowy Obsidian jest gotowy,
+- przed GitHub wymagany jest backup,
+- po backupie należy wdrożyć wersjonowanie Git/GitHub.
+
+Aktualny status projektu:
+
+`backup_before_github`
+## 2026-05-26 — Backup przed GitHubem
+
+Wykonano ręczny backup całego folderu głównego Obsidian `AI_PROJECT_HUB`.
+
+Backup zapisano poza folderem głównym pod nazwą zgodną ze schematem:
+
+`AI_PROJECT_HUB_BACKUP_2026-05-26_07-36`
+
+Sprawdzono, że backup zawiera główne foldery:
+- `00_SYSTEM`
+- `01_GLOBAL_CONTEXT`
+- `02_PROJECTS`
+- `99_BACKUPS`
+
+Status etapu: `backup_before_github` zakończony.
+
+Następny etap: `github_versioning`.
+## 2026-05-26 — Zakończenie etapu GitHub versioning
+
+Zakończono etap `github_versioning`.
+
+Wykonano pełną konfigurację wersjonowania folderu głównego Obsidian:
+
+`D:\obsidian\sejf\AI_PROJECT_HUB`
+
+Repozytorium GitHub:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+Zakres wykonanych działań:
+- utworzono prywatne repozytorium GitHub,
+- zainicjalizowano lokalne repozytorium Git na branchu `main`,
+- skonfigurowano lokalnie `user.name=Teddy`,
+- skonfigurowano lokalny email Git,
+- utworzono `.gitignore`,
+- dodano remote `origin`,
+- wykonano commit:
+
+  `Initial commit - AI project hub structure`
+
+- wykonano push do GitHub,
+- ustawiono śledzenie:
+
+  `main -> origin/main`
+
+Status:
+
+`github_versioning_completed`
+
+Następny etap:
+
+`daily_git_workflow_setup`
+## 2026-05-26 — Zakończenie daily Git workflow
+
+Zakończono etap `daily_git_workflow_setup`.
+
+Utworzono plik:
+
+`02_PROJECTS/AI_Context_System/GIT_WORKFLOW.md`
+
+Zakres procedury:
+- standardowy workflow Git,
+- szybka procedura po pracy,
+- procedura przed rozpoczęciem pracy,
+- zasady tworzenia commitów,
+- lista rzeczy, których nie commitować,
+- minimalna procedura awaryjna,
+- procedura końca sesji AI.
+
+Wykonano commit:
+
+`Add daily Git workflow procedure`
+
+Zmiany wypchnięto do GitHub:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+Status:
+
+`daily_git_workflow_setup_completed`
+
+Następny możliwy etap:
+
+`context_refresh_protocol`
+## 2026-05-26 — Utworzenie Context Refresh Protocol
+
+Utworzono plik:
+
+`02_PROJECTS/AI_Context_System/CONTEXT_REFRESH_PROTOCOL.md`
+
+Powód:
+- nowe sesje AI wymagają szybkiego odtworzenia kontekstu,
+- projekt ma kilka plików źródłowych,
+- bez stałej procedury rośnie ryzyko zgadywania i utraty kontekstu.
+
+Zakres procedury:
+- źródła prawdy,
+- kolejność czytania plików,
+- pełny komunikat startowy dla AI,
+- minimalny start awaryjny,
+- zasada aktualizacji dokumentacji po sesji,
+- checklista końca sesji,
+- procedura końca sesji,
+- standardowy komunikat startowy,
+- zasady anty-chaos.
+
+Status:
+
+`context_refresh_protocol_created`
+
+Następny krok:
+
+`context_refresh_protocol_docs_update`
+## 2026-05-27 — Context Loader MVP uruchomiony
+
+- Uporządkowano rozszerzenia plików Markdown: `*.md.md` → `*.md`.
+- Zaktualizowano `tools/build_context.py` do nowych ścieżek.
+- Potwierdzono, że `tools/build_context.py` jest śledzony przez Git.
+- Wygenerowano `AI_START_PROMPT.md` jako działający plik startowy dla nowych sesji AI.
+- Usunięto lub wyłączono z pracy stary snapshot `VAULT_CONTENT_EXPORT.md`.
+- Potwierdzono czysty stan repozytorium: `working tree clean`.
+
+Status: zakończone.
+
+```
+
+
+---
+
 ## FILE: 02_PROJECTS/AI_Context_System/DECISIONS.md
 
 ```markdown
@@ -1514,6 +2014,206 @@ Zasady:
 Status decyzji:
 
 `active`
+
+```
+
+
+---
+
+## FILE: 02_PROJECTS/AI_Context_System/GIT_WORKFLOW.md
+
+```markdown
+# Git workflow dla AI_PROJECT_HUB
+
+Status: `active`
+
+Repozytorium:
+
+`https://github.com/GrachoTG/AI_PROJECT_HUB.git`
+
+Folder lokalny:
+
+`D:\obsidian\sejf\AI_PROJECT_HUB`
+
+---
+
+## Cel
+
+Ten plik opisuje prostą, codzienną procedurę używania Git dla folderu głównego Obsidian `AI_PROJECT_HUB`.
+
+Celem nie jest perfekcyjny Git Flow.
+
+Celem jest:
+- nie tracić zmian,
+- móc cofnąć błędy,
+- mieć kopię na GitHub,
+- ograniczyć chaos,
+- nie komplikować pracy.
+
+---
+
+## Zasada główna
+
+Po każdym istotnym bloku pracy:
+
+1. sprawdź status,
+2. dodaj zmiany,
+3. zrób commit,
+4. wypchnij na GitHub.
+
+---
+
+## Standardowy workflow
+
+W PowerShell przejdź do folderu:
+
+```powershell
+cd "D:\obsidian\sejf\AI_PROJECT_HUB"
+```
+
+Sprawdź status:
+
+```powershell
+git status
+```
+
+Dodaj zmiany:
+
+```powershell
+git add .
+```
+
+Zrób commit:
+
+```powershell
+git commit -m "Opis zmian"
+```
+
+Wyślij na GitHub:
+
+```powershell
+git push
+```
+
+---
+
+## Szybka wersja po pracy
+
+```powershell
+cd "D:\obsidian\sejf\AI_PROJECT_HUB"
+git status
+git add .
+git commit -m "Update project context"
+git push
+```
+
+---
+
+## Przed rozpoczęciem pracy
+
+Jeśli pracujesz tylko na jednym komputerze, zwykle wystarczy:
+
+```powershell
+cd "D:\obsidian\sejf\AI_PROJECT_HUB"
+git status
+```
+
+Jeśli pracujesz na więcej niż jednym komputerze, przed zmianami wykonaj:
+
+```powershell
+git pull
+```
+
+---
+
+## Kiedy robić commit
+
+Commit rób po:
+- zakończeniu etapu,
+- aktualizacji kilku plików systemowych,
+- ważnej decyzji,
+- zmianie struktury folderów,
+- dodaniu nowych procedur,
+- większej sesji z AI.
+
+Nie trzeba robić commita po każdej literówce.
+
+---
+
+## Jak pisać wiadomości commitów
+
+Dobre przykłady:
+
+```text
+Update AI_Context_System memory
+Add Git workflow procedure
+Document GitHub versioning setup
+Update project tasks and log
+Refine Obsidian vault structure
+```
+
+Złe przykłady:
+
+```text
+asdf
+zmiany
+update
+final
+test
+```
+
+---
+
+## Co robić, gdy nie ma zmian
+
+Jeśli po:
+
+```powershell
+git status
+```
+
+widzisz:
+
+```text
+nothing to commit, working tree clean
+```
+
+to nie robisz nic.
+
+Nie tworzysz pustego commita.
+
+---
+
+## Co robić, gdy commit mówi `nothing to commit`
+
+To znaczy, że Git nie widzi zmian.
+
+Wykonaj:
+
+```powershell
+git status
+```
+
+Jeśli jest czysto — koniec.
+
+Jeśli są pliki nieśledzone lub zmodyfikowane — wykonaj:
+
+```powershell
+git add .
+git commit -m "Update project files"
+git push
+```
+
+---
+
+## Czego nie commitować
+
+Nie commitować:
+- lokalnych backupów,
+- plików cache,
+- plików workspace Obsidian,
+- tokenów,
+-
 
 ```
 
@@ -1820,39 +2520,13 @@ Jeżeli rozmowa robi się długa lub przekracza około 55% bezpiecznego kontekst
 
 ---
 
-## FILE: 07_PROMPTS/UPDATE_PROJECT_MEMORY.md
+## FILE: 07_PROMPTS/UPDATE_PROJECT_MEMORY.md07_PROMPTS/ADVISORY_BOARD_REVIEW.md
 
-```markdown
-# UPDATE_PROJECT_MEMORY
+**STATUS: MISSING**
 
-## Użycie
-Ten prompt służy do wymuszenia aktualizacji pamięci projektu po zakończonej sesji lub większym kroku.
 
 ---
-## Prompt
 
-Na podstawie aktualnej rozmowy przygotuj aktualizację pamięci projektu.
+# Ostrzeżenia
 
-Wygeneruj dokładnie 4 sekcje:
-
-## 1. PROJECT_MEMORY.md — aktualizacja
-Podaj gotowy blok Markdown do wklejenia do PROJECT_MEMORY.md.
-
-## 2. TASKS.md — aktualizacja
-Podaj gotowy blok Markdown do podmiany albo dopisania w TASKS.md.
-
-## 3. LOG.md — aktualizacja
-Podaj gotowy wpis Markdown do LOG.md.
-
-## 4. NEXT_CONTEXT.md — aktualizacja
-Podaj pełną, aktualną treść NEXT_CONTEXT.md do podmiany.
-
-Zasady:
-- Krótko.
-- Konkretnie.
-- Bez streszczeń literackich.
-- Tylko fakty, decyzje, status, następny krok.
-- Nie pomijaj ryzyk.
-
-```
-
+- Brak pliku: `07_PROMPTS/UPDATE_PROJECT_MEMORY.md07_PROMPTS/ADVISORY_BOARD_REVIEW.md`
