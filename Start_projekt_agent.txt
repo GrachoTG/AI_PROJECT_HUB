@@ -1,0 +1,291 @@
+Odczyt w powershell z polskimi znakami
+
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
+Get-Content .\AI_START_PROMPT.md -Encoding UTF8 -TotalCount 20
+
+```
+
+
+
+Jako senior inżynier programowania,  inżynier, specjalista od rozwiązań technologii internetowej, ale też ekspert od promptowania tworzenia agentów, asystentów i skilli i wszelkich innych narzędzi.Z wykorzystaniem AI. Mam takie zadanie do wykonania. Otóż jak wiadomo, okno kontekstowe ma ograniczoną ilość tokenów. I w odpowiednim momencie trzeba po prostu zakończyć pracę i przenieść podsumowanie do do kolejnego okna kontekstowego, bo.Dany dany model po prostu zaczyna halucynować i wymyśla głupoty.Chciałbym, żebyś przygotował takie rozwiązanie, które?Umożliwi mi.Dopisywanie do pierwotnych założeń zadania, nad którymi chce pracować.Żeby to była baza wyjściowa i później dopisywanie do tej bazy, żebym za każdym razem nie musiał w nowym oknie kontekstowym podawać pierwotnych założeń, bo jeżeli projekt jest bardzo duży, to musimy go podzielić na etapy i chciałbym, żeby.Było stworzona baza danych, która będzie się aktualizowała po każdym zakończeniu pewnego etapu pracy w danym oknie kontekstowym, żeby to dopisać do bazy danych i.Całość postaci nie wiem pliku czy dostępu do bazy danych. Ty wymyśl, w jakiej formie najlepiej to zrobić.Żebyś miał dostęp do całego.Kontekstu.Od ogółu do szczegółów z zaznaczeniem już wykonanych etapów.I oczywiście połączenia tego wszystkiego w całość, tak jak w pierwotnym założeniu całego całego projektu. Chciałbym, żeby to działało na takiej zasadzie tak zwanej szorstkiej miłości, czyli nie potrzebuję pokrywania po plecach pochwał, chce fakty i tylko fakty. Jeżeli prawda jest nawet brutalna lub mój pomysł jest.Trudny do zrealizowania albo wręcz niemożliwy. To najpierw poszukaj rozwiązań, które.Pomogłyby to  zadanie zrealizować, ale jeżeli.Nie ma takiej możliwości, to powiedz mi to twardo i uczciwie, ewentualnie zaproponuj inne rozwiązanie podobne lub to główne zadanie, którego nie da się rozwiązać Podziel na takie etapy, które będzie można prostu realizować. Potwierdź mi, że zrozumiałeś to, o czym mówię, potrzebujemy tego do skompilowania. Nie wiem napisania prompta czy jakiegoś narzędzia, gdyby żebym mógł po prostu to wykorzystywać. Jeżeli potrzebujesz doprecyzowania, zadaj mi.Dowolne pytania doprecyzowujące.Chciałbym, żebyśmy działali na takiej zasadzie i bezwzględnie się tego trzymać. To jest jedna z zasad nadrzędnych - Czyli ja mówię co chcę, ty mówisz mi jak to zrobić.I podajesz mi krótko. Nastepna zasada to Chciałbym, żeby było to tak, ja mam. Zaczynamy dane zadanie.Mówisz mi co trzeba?Wykonać.Podajesz mi instrukcję krótką, ale zwięzłą krok po kroku, bo ja Jestem laikiem, nie znam się na programowaniu, nie znam się na wszystkich rozwiązaniach, uczę się dopiero tego, więc chciałbym, żebyś to uwzględnił. Mów do mnie właśnie takim prostym językiem, ale zwięzłym, żeby oszczędzać tokeny to Jeszcze raz po prostu podkreślam, to jest to jest kryterium.
+#jak i czy ma sens utworzenie mojego kontekstu, ról, w moich biznesach, projektach, żeby zawsze pracować w kontekście nadrzędnych celów, czy konkretne podpowiedzi, że zbaczamy z kursu, albo, że ten pomysł to niekoniecznie pomoże w realizacji nadrzędnego celu (moje firmy/projekty: 1. firma oparta o model MLM w branzy Health&Beauty, współpracuję z niemiecką firmą LR Health&Beauty, buduję tu wielopoziomowe zespoły partnerów; 2. współpracuję z grupa kapitałową VOTUM SA w zakresie pomocy frankowiczom w unieważnieniu kredytów walutowych i w zakresie SKD, a także odszkodowań za służebność przesyłu; 3. współpracuję z firmą sprzedającą fizyczne złoto w modelu abonamentowy, wykorzystującą model MLM, buduję tu struktury sprzedaży; 4. jestem wspólnikiem w spółce / spółdzielni energetycznej, która sprzedaje prąd wytworzony przez elektrownie foftowoltaiczne swoich członków, a docelowo mam stworzyć system rozliczeń dla odbiorców, wdrożyć działania marketingowe i inne zapewniające rozwój spółki; 4. zarządzam szkołą językową GREGOR ACADEMY w Iławie, odpowiadam za prawie,wszystko oprócz nauczania, czyli od promocji, rekrutacji, wszelkich rozliczeń, marketing, po globalny rozwój szkoły,
+5. współpracuję z firmą PRU, w zakresie sprzedaży planów na życie i emerytalnych, budują wielopoziomowe zespoły partnerów, również MLM
+# czy ma sens i jak stworzyć radę złożoną z liderów światowej klasy, z różnych dziedzin np. 
+Czyli AI analizuje pomysł z perspektywy różnych modeli myślenia.
+Elon Musk, Jensen Huang (NVIDIA), Neal Mohan (YouTube), Alex Homose, Bill Gates, Eric Worre, John Maxwell, Brian Tracy, Donald Trump, Bob Proctor, Robert Cialdini, Dale Carnagie, Mark Zukenberg, Richard Bandler, Milton Friedman, Daniel Coleman, Dexter Yegger, Jim Dornan, Mateusz Grzesiak, Neil Rackman, David R. Hawkind, Jack Canfield, Avid Allan, Tim Cook (Apple), Sam Altman, Marc Benioff, Chris Voss, William Ury, Andrew Huberman, Daniel Kahneman, Amos Tversky, Richard Thaler, Dan Ariely, itp, do weryfikowania pomysłów, planów i rozwoju,
+np.:
+Elon Musk → pierwsze zasady, skalowalność, uproszczenie.
+Jensen Huang → technologia, infrastruktura, AI, przewaga obliczeniowa.
+Alex Hormozi → oferta, sprzedaż, wartość.
+Eric Worre → MLM, duplikacja, rekrutacja.
+John Maxwell → liderzy, kultura, przywództwo.
+Cialdini → perswazja i wpływ.
+Kahneman/Tversky → błędy poznawcze.
+Chris Voss → negocjacje.
+Bill Gates → systemowość, długoterminowa strategia.
+Sam Altman → agentowość, AI, automatyzacja.
+a gdy uznasz, ze warto dodać kolejne osoby do rady - to zaproponuj.
+Założenia:
+mamy do dyspozycji:
+server VPS na debianie
+n8n
+node
+hosting współdzielony
+zarejestrowane domeny
+
+ w wersjach bezpłatnych:
+ClickUp
+Notion, 
+Obsidian, 
+GitHub, 
+google drive
+airtable
+one drive
+groq
+
+Twórz firmową wikipedię
+
+
+Kryterium krytyczne:
+oszczędzaj maksymalnie tokeny. Rób to w krótkich jakichś zdaniach. Nie wiem, ty wymyśl jak to ma być, ma być oszczędność tokenów, żebyśmy jak najwięcej w danym oknie kontekstowym mogli mogli zrobić.
+jest zasada naszej pracy, czyli jest zadanie, ty mówisz, co jest do zrobienia i podajesz mi zwięźle, jaki powinienem mieć efekt? Ja wykonuję to zadanie,  jeżeli potwierdzam, że efekt, który mi podałeś jest zgodny z tym co zobaczyłem, to po wykonaniu zadania przechodzimy dalej, jeśli nie, pracujemy nad tym zadaniem do efektu pożądanego, ale zawsze tylko jedno polecenie, jedną odpowiedź, bo inaczej wielokrotnie robimy to samo, jeżeli ty mi podasz kilka kroków do zrealizowania, a ja już utknę na pierwszym kroku.To nie ma sensu, żebym się przekopywał przez wszystkie inne i tak musimy wrócić do pierwszego do pierwszego kroku.
+w pierwszej kolejności proponuj wykorzystanie narzędzi, rozwiązań darmowych. Jeżeli nie ma darmowych proponuj płatne kierując się najniższym kosztem.
+zapisuj w bazie danych naszą konwersację, żeby tworzyć lepsze polecenia, twórz z tego bardziej precyzyjne prompty i twórz szczegółowe skill’s dla zbudowania wysoko wydajnych agentów - uwzględniaj to i twórz automatycznie skils’s.
+wersjonuj,
+rób backup, żeby można było wrócić do ostatniej działającej wersji 
+zapisuj każdy etap z adnotacją wersji,
+twórz na bieżąco dokumentację,
+twórz po każdym etapie instrukcje obsługi,
+pilnuj mnie gdy zbaczam z “głównej ścieżki”, rozpraszam się, żeby ograniczyć tokeny, czas i koszty.,
+kontroluj zajęość okna kontekstowego, ostrzegaj po przekroczeniu 55% zajętości i proponuj podsumowanie i przygotowanie do przeniesienia wraz z krótką instrukcją uruchomienia w nowym czacie.
+nie zakładaj, że użytkownik wie, chyba, że sam powie, że wie,
+zależy mi na max automatyzacji, automatyzujmy wszystko co się da!
+zamiast wyświetlać pojedyncze zadania i komendy do wklejenia, twórz plik skryptu, który wykonam i niech on wygeneruje odpowiedni plik z wynikiem działania tego skryptu, a ja ci do wkleję, nie chcę robić tego ręcznie, kopiuj - wklej, itd. !to jest etap przejściowy, jak najszybiej robimy pełną automatyzację, a najlepeij agenta samodzielnego.
+
+Uzupełnienie:
+w obsidian mam bazę danych: 
+AI_PROJECT_HUB
+i foldery główne:
+## Files
+
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+d-----        2026-06-27     16:27                .obsidian                                                                                                
+d-----        2026-06-26     15:43                00_SYSTEM                                                                                                
+d-----        2026-05-26     18:28                01_GLOBAL_CONTEXT                                                                                        
+d-----        2026-05-25     14:33                02_PROJECTS                                                                                              
+d-----        2026-05-25     17:42                03_MODULES                                                                                               
+d-----        2026-05-25     14:24                04_DECISIONS                                                                                             
+d-----        2026-05-25     14:25                05_TASKS                                                                                                 
+d-----        2026-05-25     14:25                06_LOGS                                                                                                  
+d-----        2026-05-26     18:28                07_PROMPTS                                                                                               
+d-----        2026-05-25     14:25                08_ARCHIVE                                                                                               
+d-----        2026-06-27     17:02                09_AUTOMATION                                                                                            
+d-----        2026-06-27     15:48                10_SKILLS                                                                                                
+d-----        2026-06-27     15:48                11_AGENTS                                                                                                
+d-----        2026-06-27     15:49                12_IDEAS                                                                                                 
+d-----        2026-06-27     15:50                13_PLAYBOOKS                                                                                             
+d-----        2026-06-27     15:50                20_NOTES                                                                                                 
+d-----        2026-06-27     19:06                99_BACKUPS                                                                                               
+d-----        2026-06-27     21:47                tools                                                                                                    
+-a----        2026-06-26     16:23            710 .gitignore                                                                                               
+-a----        2026-06-27     21:29          58499 AI_AUDIT_PACK.md                                                                                         
+-a----        2026-06-27     21:36           6264 AI_CONTEXT_FILE_INDEX.md                                                                                 
+-a----        2026-06-27     21:36           2537 AI_CONTEXT_MANIFEST.json                                                                                 
+-a----        2026-06-27     21:36           2537 AI_CONTEXT_MANIFEST.json.bak_task_05_20260627_214709                                                     
+-a----        2026-06-27     21:36         123561 AI_START_PROMPT.md                                                                                       
+-a----        2026-06-27     17:56          73664 ARCHITECTURE_AUDIT.md                                                                                    
+-a----        2026-06-27     21:41           1212 collect_new_chat_start.ps1                                                                               
+-a----        2026-06-27     20:49           6729 FILE_TREE_AUDIT.txt                                                                                      
+-a----        2026-06-27     17:20           2081 FULL_FILE_INDEX.md                                                                                       
+-a----        2026-06-27     21:32          13194 NEW_CHAT_START_HERE.md                                                                                   
+-a----        2026-06-27     21:32           2820 NEXT_CHAT_SUMMARY.md                                                                                     
+-a----        2026-06-27     21:29           8121 prepare_new_chat.ps1                                                                                     
+-a----        2026-06-27     21:46          13484 RESULT_NEW_CHAT_START_HERE.txt                                                                           
+-a----        2026-06-27     21:50          10004 RESULT_TASK_05A_INSPECT_BUILD_CONTEXT.txt                                                                
+-a----        2026-06-27     21:47            625 RESULT_TASK_05_FIX_SCRIPT_CLASSIFICATION.txt                                                             
+-a----        2026-06-27     22:10              0 struktura.txt                                                                                            
+-a----        2026-06-27     21:49           6080 task_05_fix_script_classification.ps1                                                                    
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\.obsidian
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-06-27     16:27              2 app.json                                                                                                 
+-a----        2026-06-27     15:46              2 appearance.json                                                                                          
+-a----        2026-06-26     15:08            696 core-plugins.json                                                                                        
+-a----        2026-06-26     15:29            493 graph.json                                                                                               
+-a----        2026-06-27     21:50           6549 workspace.json                                                                                           
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\00_SYSTEM
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-06-26     16:01           2007 AI_WORK_PROTOCOL.md                                                                                      
+-a----        2026-05-25     20:56           3668 WORK_RULES.md                                                                                            
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\01_GLOBAL_CONTEXT
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+d-----        2026-05-26     18:28                BUSINESS_CONTEXT                                                                                         
+-a----        2026-05-25     21:11           3372 GLOBAL_CONTEXT.md                                                                                        
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\01_GLOBAL_CONTEXT\BUSINESS_CONTEXT
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-06-27     17:51           3488 ACTIVE_PROJECTS.md                                                                                       
+-a----        2026-05-25     20:53           2190 BUSINESS_CONTEXT_INDEX.md                                                                                
+-a----        2026-05-25     20:33           2573 BUSINESS_PORTFOLIO.md                                                                                    
+-a----        2026-05-25     20:36           1453 DECISION_FILTERS.md                                                                                      
+-a----        2026-05-25     20:49           2193 OWNER_PROFILE.md                                                                                         
+-a----        2026-05-25     20:48           3046 ROLES.md                                                                                                 
+-a----        2026-05-25     20:37           2082 STRATEGIC_GOALS.md                                                                                       
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\02_PROJECTS
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+d-----        2026-05-26     12:38                AI_Context_System                                                                                        
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\02_PROJECTS\AI_Context_System
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-06-27     19:15           5706 CONTEXT_REFRESH_PROTOCOL.md                                                                              
+-a----        2026-05-26     12:38           3256 DECISIONS.md                                                                                             
+-a----        2026-05-26     12:38           2719 GIT_WORKFLOW.md                                                                                          
+-a----        2026-05-27     11:23           4737 LOG.md                                                                                                   
+-a----        2026-05-27     11:25            755 NEXT_CONTEXT.md                                                                                          
+-a----        2026-05-26     12:38           2127 PROJECT_BRIEF.md                                                                                         
+-a----        2026-05-27     11:24           6376 PROJECT_MEMORY.md                                                                                        
+-a----        2026-05-26     12:31           3702 TASKS.md                                                                                                 
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\03_MODULES
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+d-----        2026-05-26     18:28                ADVISORY_BOARD                                                                                           
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\03_MODULES\ADVISORY_BOARD
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-06-27     20:39           2743 BOARD_PROFILES.md                                                                                        
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\07_PROMPTS
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-05-25     20:08           1724 ADVISORY_BOARD_REVIEW.md                                                                                 
+-a----        2026-05-25     20:03            950 START_NEW_CONTEXT.md                                                                                     
+-a----        2026-05-25     15:23            676 TASK_PLANNER.md                                                                                          
+-a----        2026-05-25     15:16            634 TECH_DECISION.md                                                                                         
+-a----        2026-05-25     15:03            773 UPDATE_PROJECT_MEMORY.md                                                                                 
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\09_AUTOMATION
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-06-26     17:03           2623 GIT_SYNC_USAGE.md                                                                                        
+-a----        2026-06-26     16:10           3508 OBSIDIAN_GITHUB_N8N_PLAN.md                                                                              
+-a----        2026-06-26     17:12           6884 VPS_GIT_PULL_PLAN.md                                                                                     
+-a----        2026-06-26     17:15           5320 VPS_SETUP_CHECKLIST.md                                                                                   
+-a----        2026-06-26     19:15           4266 VPS_STATUS_JSON.md                                                                                       
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\99_BACKUPS
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+d-----        2026-05-26     12:38                md_fix_current_2026-05-26                                                                                
+d-----        2026-05-26     18:28                md_md_fix_2026-05-26                                                                                     
+-a----        2026-06-27     16:21           5624 build_context.py                                                                                         
+-a----        2026-06-27     19:05           2328 NEXT_CHAT_SUMMARY_PART_1.md                                                                              
+-a----        2026-06-27     19:06           2620 NEXT_CHAT_SUMMARY_PART_2.md                                                                              
+-a----        2026-06-27     19:06           4165 NEXT_CHAT_SUMMARY_PART_3.md                                                                              
+-a----        2026-05-25     21:13           1028 README.md                                                                                                
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\99_BACKUPS\md_fix_current_2026-05-26
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-05-26     12:24           5359 CONTEXT_REFRESH_PROTOCOL.md                                                                              
+-a----        2026-05-26     12:28           4231 LOG.md                                                                                                   
+-a----        2026-05-26     12:29           1661 NEXT_CONTEXT.md                                                                                          
+-a----        2026-05-26     12:31           3702 TASKS.md                                                                                                 
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\99_BACKUPS\md_md_fix_2026-05-26
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-05-26     12:24           5359 CONTEXT_REFRESH_PROTOCOL.md                                                                              
+-a----        2026-05-26     12:14           3149 DECISIONS.md                                                                                             
+-a----        2026-05-26     12:16           2528 GIT_WORKFLOW.md                                                                                          
+-a----        2026-05-26     12:28           4231 LOG.md                                                                                                   
+-a----        2026-05-26     12:29           1661 NEXT_CONTEXT.md                                                                                          
+-a----        2026-05-25     19:54           2054 PROJECT_BRIEF.md                                                                                         
+-a----        2026-05-26     12:18           5654 PROJECT_MEMORY.md                                                                                        
+-a----        2026-05-26     12:31           3702 TASKS.md                                                                                                 
+
+
+    Directory: D:\obsidian\sejf\ai_project_hub\tools
+
+
+Mode                 LastWriteTime         Length Name                                                                                                     
+----                 -------------         ------ ----                                                                                                     
+-a----        2026-06-27     18:13          11688 build_context.py                                                                                         
+-a----        2026-06-27     18:13          11688 build_context.py.bak_task_05_20260627_214709                                                             
+-a----        2026-06-26     16:28           1743 git_sync.ps1                                                                                             
+-a----        2026-06-26     20:29           6179 n8n_maintenance.sh                                                                                       
+
+
+
+
+są w nich pliki z poprzednich projektów do wykorzystania. Chcę dać ci dostęp, żebyś je sprawdził, jeżeli powiesz mi jak.
+
+może przydałoby się jeszcze dodać:
+SKILLS - dla nowych umiejętności
+AGENTS - dla agentów
+IDEA - dla nowych pomysłów, bo w trakcie pracy, często przychodzą świetne pomysły i żeby nie uciekły z głowy, warto je zapisywać na bieżąco.
+
+Podpowiedz, czy w trakcie pracy możemy tworzyć specjalistycznych agentów i zapisywać je w agents.md.
+Podpowiedz, jak w trakcie pracy tworzyć autonomicznych agentów, do wykorzystania w innych projektach. 
+Uporządkuj to i Potwierdź czy to zrozumiałeś.Kolejne krytyczne informacje, założenia, wytyczne i zmiany bedę podawał w trakcie pracy. Koniecznie dopisuj je w odpowiednich miejscach, żeby po rozpoczęciu pracy w nowym czacie, odczytać co jest zrobione, z którego miejsca startujemy, co jest do zrobienia w kolenych etapach, z uwzglednieniem ostatecznego celu.
+Ale najpierw dokładnie sprawdź co już działa i zrób szczegółowy raport, i zapisz go w pliku.
+
+Gdy to zrobisz:
+podpowiedz mija jak to wykorzystywać przy kolejnych nowych zadaniach, projektach
+poproś o podanie zadania lub projektu do wykonania.

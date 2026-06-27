@@ -1,0 +1,63 @@
+﻿{
+    "project":  "AI_Context_System",
+    "scan_root":  ".",
+    "output_prompt":  "AI_START_PROMPT.md",
+    "output_index":  "AI_CONTEXT_FILE_INDEX.md",
+    "exclude_dirs":  [
+                         ".git",
+                         ".obsidian",
+                         "99_BACKUPS",
+                         "__pycache__",
+                         "node_modules",
+                         ".venv",
+                         "venv",
+                         ".mypy_cache",
+                         ".pytest_cache"
+                     ],
+    "exclude_files":  [
+                          "ARCHITECTURE_AUDIT.md"
+                      ],
+    "include_extensions":  [
+                               ".md",
+                               ".txt",
+                               ".py",
+                               ".ps1",
+                               ".sh",
+                               ".json",
+                               ".yaml",
+                               ".yml"
+                           ],
+    "max_file_size_kb_for_full_load":  200,
+    "warn_on_unknown":  true,
+    "include_unknown_index_only":  true,
+    "generated_files":  [
+                            "AI_START_PROMPT.md",
+                            "AI_CONTEXT_FILE_INDEX.md",
+                            "FULL_FILE_INDEX.md",
+                            "AI_AUDIT_PACK.md",
+                            "FILE_TREE_AUDIT.txt",
+                            "NEW_CHAT_START_HERE.md"
+                        ],
+    "full_load_categories":  [
+                                 "system",
+                                 "global_context",
+                                 "business_context",
+                                 "project_core",
+                                 "project_memory",
+                                 "project_tasks",
+                                 "project_log",
+                                 "decision_log",
+                                 "prompt",
+                                 "module",
+                                 "advisory_board",
+                                 "automation",
+                                 "script",
+                                 "manifest"
+                             ],
+    "index_only_categories":  [
+                                  "generated",
+                                  "git_config",
+                                  "obsidian_config",
+                                  "unknown"
+                              ]
+}

@@ -242,3 +242,16 @@ Następny krok:
 - zaktualizować dokumentację projektu,
 - wykonać commit,
 - wypchnąć zmiany do GitHub.
+
+## PowerShell i UTF-8
+
+Przy podglądzie plików Markdown w PowerShellu należy ustawić UTF-8:
+
+````powershell
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+$OutputEncoding = [System.Text.Encoding]::UTF8
+Get-Content .\AI_START_PROMPT.md -Encoding UTF8
+````
+
+Pliki Markdown generowane przez system kontekstu są traktowane jako UTF-8.
+

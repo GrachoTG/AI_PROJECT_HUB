@@ -147,6 +147,13 @@ Cel:
 Następny krok:
 - do doprecyzowania.
 
+### 7. PRU
+Obszar: ubezpieczenia na życie i emerytalne  
+Model: sprzedaż + MLM  
+Cel: sprzedaż i budowa zespołów.
+
+Następny krok:
+- do doprecyzowania.
 ---
 
 ## Zasada użycia

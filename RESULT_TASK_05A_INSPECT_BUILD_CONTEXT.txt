@@ -1,0 +1,186 @@
+﻿=== TASK 05A: INSPECT build_context.py STRUCTURE ===
+Timestamp: 2026-06-27T21:50:18.9788346+02:00
+Current directory: D:\obsidian\sejf\ai_project_hub
+
+=== PRECHECK ===
+OK: Found .\tools\build_context.py
+OK: Found .\AI_CONTEXT_MANIFEST.json
+
+=== FILE INFO ===
+FullName: D:\obsidian\sejf\ai_project_hub\tools\build_context.py
+Length bytes: 11688
+LastWriteTime: 06/27/2026 18:13:06
+Line count: 209
+
+=== FUNCTION LOCATIONS ===
+Line 23: def normalize_rel(path: Path) -> str:
+Line 26: def load_manifest() -> dict:
+Line 39: def is_excluded_dir(path: Path, manifest: dict) -> bool:
+Line 43: def read_text_safe(path: Path):
+Line 56: def classify_file(rel: str, suffix: str) -> str:
+Line 81: def determine_context_mode(category, size_kb, manifest):
+Line 94: def scan_repo(manifest):
+Line 115: def build_index(records, manifest):
+Line 128: def board_status(records):
+Line 134: def header(records, manifest):
+Line 157: def render_file(record):
+Line 181: def build_prompt(records, manifest):
+Line 188: def main():
+
+
+=== classify_file FULL FUNCTION CANDIDATE ===
+classify_file starts at line: 56
+classify_file candidate ends at line: 80
+
+   56: def classify_file(rel: str, suffix: str) -> str:
+   57:     rel_l = rel.lower()
+   58:     name = Path(rel).name.lower()
+   59:     if rel == "AI_CONTEXT_MANIFEST.json": return "manifest"
+   60:     if name in {"ai_start_prompt.md", "ai_context_file_index.md", "full_file_index.md"}: return "generated"
+   61:     if rel_l.startswith(".obsidian/"): return "obsidian_config"
+   62:     if name == ".gitignore" or rel_l.startswith(".git/"): return "git_config"
+   63:     if rel_l.startswith("99_backups/"): return "backup"
+   64:     if rel_l.startswith("00_system/"): return "system"
+   65:     if rel_l.startswith("01_global_context/business_context/"): return "business_context"
+   66:     if rel_l.startswith("01_global_context/"): return "global_context"
+   67:     if rel_l.startswith("02_projects/ai_context_system/"):
+   68:         if name == "project_memory.md": return "project_memory"
+   69:         if name == "tasks.md": return "project_tasks"
+   70:         if name == "log.md": return "project_log"
+   71:         if name == "decisions.md": return "decision_log"
+   72:         return "project_core"
+   73:     if rel_l.startswith("03_modules/advisory_board/"): return "advisory_board"
+   74:     if rel_l.startswith("03_modules/"): return "module"
+   75:     if rel_l.startswith("07_prompts/"): return "prompt"
+   76:     if rel_l.startswith("09_automation/"): return "automation"
+   77:     if rel_l.startswith("tools/"):
+   78:         return "script" if suffix in {".py", ".ps1", ".sh"} else "automation"
+   79:     return "unknown"
+   80: 
+
+=== LINES CONTAINING tools / script / category ===
+--- PATTERN: tools ---
+Line 77:     if rel_l.startswith("tools/"):
+Line 146:         "## HIERARCHIA ŹRÓDEŁ PRAWDY", "", "1. `00_SYSTEM/AI_WORK_PROTOCOL.md`", "2. `00_SYSTEM/WORK_RULES.md`", "3. `AI_CONTEXT_MANIFEST.json`", "4. `AI_CONTEXT_FILE_INDEX.md`", "5. `01_GLOBAL_CONTEXT/`", "6. `02_PROJECTS/AI_Context_System/`", "7. `03_MODULES/`", "8. `07_PROMPTS/`", "9. `09_AUTOMATION/`", "10. `tools/`", "",
+
+
+--- PATTERN: script ---
+Line 19:     "full_load_categories": ["system", "global_context", "business_context", "project_core", "project_memory", "project_tasks", "project_log", "decision_log", "prompt", "module", "advisory_board", "automation", "script", "manifest"],
+Line 78:         return "script" if suffix in {".py", ".ps1", ".sh"} else "automation"
+
+
+--- PATTERN: category ---
+Line 81: def determine_context_mode(category, size_kb, manifest):
+Line 83:     if category == "generated": return "index_only", "generated_file_not_loaded_to_avoid_recursion"
+Line 84:     if category == "backup": return "skipped", "backup_excluded"
+Line 85:     if category == "obsidian_config": return "skipped", "obsidian_local_config_excluded"
+Line 86:     if category == "git_config": return "index_only", "git_config_index_only"
+Line 88:     if category == "unknown":
+Line 90:     if category in set(manifest.get("full_load_categories", [])): return "full", "category_full_load"
+Line 91:     if category in set(manifest.get("index_only_categories", [])): return "index_only", "category_index_only"
+Line 110:         category = classify_file(rel, suffix)
+Line 111:         mode, reason = determine_context_mode(category, size_kb, manifest)
+Line 112:         records.append({"path": rel, "extension": suffix or "[none]", "size_kb": size_kb, "modified": datetime.fromtimestamp(st.st_mtime).isoformat(timespec="seconds"), "category": category, "context_mode": mode, "reason": reason})
+Line 119:     lines += ["", "## Files", "", "| Path | Ext | Size KB | Modified | Category | Context mode | Reason |", "|---|---:|---:|---|---|---|---|"]
+Line 121:         lines.append(f"| `{r['path']}` | `{r['extension']}` | `{r['size_kb']}` | `{r['modified']}` | `{r['category']}` | `{r['context_mode']}` | `{r['reason']}` |")
+Line 153:     lines += ["", "## PLIKI ZAŁADOWANE W PEŁNEJ TREŚCI", ""] + [f"- `{r['path']}` — `{r['category']}`" for r in full]
+Line 169: Category: `{record['category']}`  
+
+
+--- PATTERN: return ---
+Line 24:     return path.relative_to(ROOT).as_posix()
+Line 29:         return DEFAULT_MANIFEST
+Line 34:         return m
+Line 37:         return DEFAULT_MANIFEST
+Line 41:     return any(x in parts for x in manifest.get("exclude_dirs", []))
+Line 54:     return content, warnings
+Line 59:     if rel == "AI_CONTEXT_MANIFEST.json": return "manifest"
+Line 60:     if name in {"ai_start_prompt.md", "ai_context_file_index.md", "full_file_index.md"}: return "generated"
+Line 61:     if rel_l.startswith(".obsidian/"): return "obsidian_config"
+Line 62:     if name == ".gitignore" or rel_l.startswith(".git/"): return "git_config"
+Line 63:     if rel_l.startswith("99_backups/"): return "backup"
+Line 64:     if rel_l.startswith("00_system/"): return "system"
+Line 65:     if rel_l.startswith("01_global_context/business_context/"): return "business_context"
+Line 66:     if rel_l.startswith("01_global_context/"): return "global_context"
+Line 68:         if name == "project_memory.md": return "project_memory"
+Line 69:         if name == "tasks.md": return "project_tasks"
+Line 70:         if name == "log.md": return "project_log"
+Line 71:         if name == "decisions.md": return "decision_log"
+Line 72:         return "project_core"
+Line 73:     if rel_l.startswith("03_modules/advisory_board/"): return "advisory_board"
+Line 74:     if rel_l.startswith("03_modules/"): return "module"
+Line 75:     if rel_l.startswith("07_prompts/"): return "prompt"
+Line 76:     if rel_l.startswith("09_automation/"): return "automation"
+Line 78:         return "script" if suffix in {".py", ".ps1", ".sh"} else "automation"
+Line 79:     return "unknown"
+Line 83:     if category == "generated": return "index_only", "generated_file_not_loaded_to_avoid_recursion"
+Line 84:     if category == "backup": return "skipped", "backup_excluded"
+Line 85:     if category == "obsidian_config": return "skipped", "obsidian_local_config_excluded"
+Line 86:     if category == "git_config": return "index_only", "git_config_index_only"
+Line 87:     if size_kb > max_size: return "index_only", f"file_too_large_over_{max_size}_kb"
+Line 89:         return ("unknown", "unknown_requires_decision") if manifest.get("include_unknown_index_only", True) else ("skipped", "unknown_skipped_by_manifest")
+Line 90:     if category in set(manifest.get("full_load_categories", [])): return "full", "category_full_load"
+Line 91:     if category in set(manifest.get("index_only_categories", [])): return "index_only", "category_index_only"
+Line 92:     return "unknown", "no_matching_context_rule"
+Line 113:     return sorted(records, key=lambda r: r["path"].lower())
+Line 126:     return "\n".join(lines) + "\n"
+Line 130:     if not rec: return "missing"
+Line 132:     return "active" if content.strip() else "empty"
+Line 155:     return "\n".join(lines)
+Line 164:     return f"""
+Line 186:     return "".join(parts)
+
+
+--- PATTERN: full_load_categories ---
+Line 19:     "full_load_categories": ["system", "global_context", "business_context", "project_core", "project_memory", "project_tasks", "project_log", "decision_log", "prompt", "module", "advisory_board", "automation", "script", "manifest"],
+Line 90:     if category in set(manifest.get("full_load_categories", [])): return "full", "category_full_load"
+
+
+--- PATTERN: index_only_categories ---
+Line 20:     "index_only_categories": ["generated", "git_config", "obsidian_config", "unknown"],
+Line 91:     if category in set(manifest.get("index_only_categories", [])): return "index_only", "category_index_only"
+
+
+=== MANIFEST CURRENT CATEGORIES ===
+full_load_categories:
+  - system
+  - global_context
+  - business_context
+  - project_core
+  - project_memory
+  - project_tasks
+  - project_log
+  - decision_log
+  - prompt
+  - module
+  - advisory_board
+  - automation
+  - script
+  - manifest
+
+index_only_categories:
+  - generated
+  - git_config
+  - obsidian_config
+  - unknown
+
+=== BACKUP FILES CREATED BY FAILED TASK 05 ===
+Root backups:
+
+FullName                                                                             Length LastWriteTime      
+--------                                                                             ------ -------------      
+D:\obsidian\sejf\ai_project_hub\AI_CONTEXT_MANIFEST.json.bak_task_05_20260627_214709   2537 2026-06-27 21:36:10
+
+
+
+Tools backups:
+
+FullName                                                                           Length LastWriteTime      
+--------                                                                           ------ -------------      
+D:\obsidian\sejf\ai_project_hub\tools\build_context.py.bak_task_05_20260627_214709  11688 2026-06-27 18:13:06
+
+
+
+
+=== RESULT ===
+SUCCESS
