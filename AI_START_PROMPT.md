@@ -1,6 +1,6 @@
 # AI_START_PROMPT
 
-Generated: 2026-05-27 12:00:25
+Generated: 2026-06-27 16:21:59
 
 ## ROLA AI
 
@@ -2520,13 +2520,122 @@ Jeżeli rozmowa robi się długa lub przekracza około 55% bezpiecznego kontekst
 
 ---
 
-## FILE: 07_PROMPTS/UPDATE_PROJECT_MEMORY.md07_PROMPTS/ADVISORY_BOARD_REVIEW.md
+## FILE: 07_PROMPTS/UPDATE_PROJECT_MEMORY.md
 
-**STATUS: MISSING**
+```markdown
+# UPDATE_PROJECT_MEMORY
+
+## Użycie
+Ten prompt służy do wymuszenia aktualizacji pamięci projektu po zakończonej sesji lub większym kroku.
+
+---
+## Prompt
+
+Na podstawie aktualnej rozmowy przygotuj aktualizację pamięci projektu.
+
+Wygeneruj dokładnie 4 sekcje:
+
+## 1. PROJECT_MEMORY.md — aktualizacja
+Podaj gotowy blok Markdown do wklejenia do PROJECT_MEMORY.md.
+
+## 2. TASKS.md — aktualizacja
+Podaj gotowy blok Markdown do podmiany albo dopisania w TASKS.md.
+
+## 3. LOG.md — aktualizacja
+Podaj gotowy wpis Markdown do LOG.md.
+
+## 4. NEXT_CONTEXT.md — aktualizacja
+Podaj pełną, aktualną treść NEXT_CONTEXT.md do podmiany.
+
+Zasady:
+- Krótko.
+- Konkretnie.
+- Bez streszczeń literackich.
+- Tylko fakty, decyzje, status, następny krok.
+- Nie pomijaj ryzyk.
+
+```
 
 
 ---
 
-# Ostrzeżenia
+## FILE: 07_PROMPTS/ADVISORY_BOARD_REVIEW.md
 
-- Brak pliku: `07_PROMPTS/UPDATE_PROJECT_MEMORY.md07_PROMPTS/ADVISORY_BOARD_REVIEW.md`
+```markdown
+# ADVISORY_BOARD_REVIEW
+
+## Użycie
+Prompt służy do oceny pomysłu przez zestaw perspektyw eksperckich.
+
+---
+
+## Prompt
+
+Oceń poniższy pomysł przez pryzmat rady doradczej złożonej z perspektyw eksperckich.
+
+Pomysł:
+[OPIS POMYSŁU]
+
+Kontekst biznesowy:
+[OPIS KONTEKSTU]
+
+Aktualny cel nadrzędny:
+[CEL]
+
+Oceń z perspektyw:
+
+## 1. Strateg skalowania
+- Czy to da się skalować?
+- Co blokuje wzrost?
+
+## 2. Ekspert automatyzacji
+- Co można zautomatyzować?
+- Co jest zbędną pracą ręczną?
+
+## 3. Ekspert sprzedaży
+- Czy to zwiększa sprzedaż?
+- Czy oferta jest jasna?
+
+## 4. Ekspert MLM / network marketingu
+- Czy to wspiera rekrutację, duplikację albo retencję?
+- Czy przeciętny partner będzie w stanie to powtórzyć?
+
+## 5. Ekspert finansów i ryzyka
+- Jakie są koszty?
+- Jakie jest ryzyko straty czasu lub pieniędzy?
+
+## 6. Operator biznesowy
+- Co trzeba wykonać operacyjnie?
+- Czy to nie stworzy chaosu?
+
+## 7. Brutalny sceptyk
+- Dlaczego ten pomysł może być zły?
+- Co jest ukrytym problemem?
+
+## 8. Adwokat klienta
+- Czy klient tego chce?
+- Czy klient rozumie wartość?
+
+## inspiracje:
+
+- Elon Musk → pierwsze zasady, automatyzacja, skalowanie, cięcie złożoności.
+- Alex Hormozi → oferta, wartość, sprzedaż, monetyzacja.
+- Bill Gates → systemowość, długoterminowa skala, procesy.
+- Eric Worre → MLM, rekrutacja, duplikacja, przywództwo.
+- Charlie Munger → odwracanie problemu, ryzyko, błędy decyzyjne.
+- Peter Drucker → zarządzanie, efektywność, priorytety.
+- Naval Ravikant → dźwignia, kod/media/kapitał/ludzie.
+
+Na końcu podaj:
+
+## Werdykt
+- Robić teraz / Odłożyć / Odrzucić
+
+## Powód
+Maksymalnie 5 zdań.
+
+## Pierwszy krok
+Jedno konkretne działanie.
+
+```
+
