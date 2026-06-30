@@ -12,6 +12,7 @@ function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('GA Umowy')
     .addItem('01. Utwórz / odśwież dni wolne', 'gaCreateDaysOffSheet')
+	.addItem('02. Utwórz / odśwież konfigurację', 'gaCreateConfigSheet')
     .addToUi();
 }
 
