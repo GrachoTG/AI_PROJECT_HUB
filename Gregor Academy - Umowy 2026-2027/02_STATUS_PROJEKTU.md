@@ -122,3 +122,29 @@ Umowy mają powstawać w dwóch formach:
 ## Następny krok
 
 Utworzyć plik `03_DECYZJE.md` w Obsidianie.
+## Aktualny status
+
+Projekt działa w wersji:
+
+`v0.1.0`
+
+Wykonano:
+
+- utworzono pamięć projektową w Obsidianie
+- utworzono mapę plików projektu
+- utworzono folder `apps-script`
+- utworzono plik `apps-script/00_CONFIG.gs`
+- utworzono plik `apps-script/01_DNI_WOLNE.gs`
+- przeniesiono kod do Apps Script
+- uruchomiono funkcję `gaCreateDaysOffSheet`
+- automatycznie utworzono arkusz `Dni_wolne_26_27`
+- automatycznie utworzono arkusz `GA_Log`
+- potwierdzono działanie pierwszego skryptu
+
+## Aktualna wersja
+
+`v0.1.0`
+
+## Następny krok
+
+Utworzyć arkusz `Konfiguracja_26_27` z parametrami roku szkolnego i umów.

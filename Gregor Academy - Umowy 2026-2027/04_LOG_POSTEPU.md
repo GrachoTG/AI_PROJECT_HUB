@@ -30,3 +30,29 @@ Status:
 Następny krok:
 
 - utworzyć plik `05_MAPA_PLIKOW.md`
+---
+
+## 2026-06-30
+
+### v0.1.0 — Pierwszy działający skrypt Apps Script
+
+Wykonano:
+
+- utworzono folder `apps-script`
+- utworzono plik `00_CONFIG.gs`
+- utworzono plik `01_DNI_WOLNE.gs`
+- przeniesiono oba pliki do Apps Script
+- nazwano projekt Apps Script `GA_Umowy_2026_2027`
+- uruchomiono funkcję `gaCreateDaysOffSheet`
+- utworzono arkusz `Dni_wolne_26_27`
+- utworzono arkusz `GA_Log`
+- zapisano pierwszy log techniczny w arkuszu `GA_Log`
+
+Status:
+
+- działa
+- wersja projektu podniesiona do `v0.1.0`
+
+Następny krok:
+
+- przygotować konfigurację roku szkolnego i parametrów umów
