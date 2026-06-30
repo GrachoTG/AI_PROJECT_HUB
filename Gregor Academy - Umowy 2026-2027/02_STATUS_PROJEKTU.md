@@ -148,3 +148,32 @@ Wykonano:
 ## Następny krok
 
 Utworzyć arkusz `Konfiguracja_26_27` z parametrami roku szkolnego i umów.
+## Aktualny status
+
+Projekt działa w wersji:
+
+`v0.2.0`
+
+Wykonano:
+
+- utworzono pamięć projektową w Obsidianie
+- utworzono mapę plików projektu
+- utworzono folder `apps-script`
+- utworzono plik `apps-script/00_CONFIG.gs`
+- utworzono plik `apps-script/01_DNI_WOLNE.gs`
+- utworzono plik `apps-script/02_KONFIGURACJA.gs`
+- przeniesiono kod do Apps Script
+- uruchomiono funkcję `gaCreateDaysOffSheet`
+- automatycznie utworzono arkusz `Dni_wolne_26_27`
+- automatycznie utworzono arkusz `GA_Log`
+- uruchomiono funkcję `gaCreateConfigSheet`
+- automatycznie utworzono arkusz `Konfiguracja_26_27`
+- potwierdzono działanie konfiguracji
+
+## Aktualna wersja
+
+`v0.2.0`
+
+## Następny krok
+
+Utworzyć arkusz danych wejściowych uczniów i kursów.

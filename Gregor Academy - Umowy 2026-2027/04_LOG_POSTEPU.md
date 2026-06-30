@@ -56,3 +56,27 @@ Status:
 Następny krok:
 
 - przygotować konfigurację roku szkolnego i parametrów umów
+---
+
+## 2026-06-30
+
+### v0.2.0 — Arkusz konfiguracji roku szkolnego i umów
+
+Wykonano:
+
+- utworzono plik `02_KONFIGURACJA.gs`
+- dodano funkcję `gaCreateConfigSheet`
+- zaktualizowano menu `GA Umowy`
+- przeniesiono nowy plik do Apps Script
+- uruchomiono funkcję `gaCreateConfigSheet`
+- utworzono arkusz `Konfiguracja_26_27`
+- zapisano log techniczny w arkuszu `GA_Log`
+
+Status:
+
+- działa
+- wersja projektu podniesiona do `v0.2.0`
+
+Następny krok:
+
+- przygotować arkusz danych wejściowych uczniów i kursów
