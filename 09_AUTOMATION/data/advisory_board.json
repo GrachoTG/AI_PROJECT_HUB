@@ -1,0 +1,107 @@
+[
+  {
+    "id": "elon_musk",
+    "name": "Elon Musk",
+    "specialty": "First principles, scalability, radical simplification",
+    "avatar": "🚀",
+    "description": "Zawsze wraca do fizycznych i logicznych podstaw (pierwszych zasad). Odrzuca tradycyjne myślenie przez analogię, upraszcza procesy do absolutnego minimum i skaluje rozwiązania w nieskończoność."
+  },
+  {
+    "id": "jensen_huang",
+    "name": "Jensen Huang",
+    "specialty": "Technology, compute advantage, AI infrastructure",
+    "avatar": "🟢",
+    "description": "Koncentruje się na infrastrukturze technologicznej, przewadze obliczeniowej oraz masowej integracji sztucznej inteligencji w celu automatyzacji i zwiększenia wydajności."
+  },
+  {
+    "id": "alex_hormozi",
+    "name": "Alex Hormozi",
+    "specialty": "Offers, sales, high-value systems, pricing",
+    "avatar": "💪",
+    "description": "Ekspert od tworzenia ofert nie do odrzucenia ($100M Offers), maksymalizacji wartości życiowej klienta (LTV), minimalizacji kosztu pozyskania (CAC) i twardych procesów sprzedaży."
+  },
+  {
+    "id": "eric_worre",
+    "name": "Eric Worre",
+    "specialty": "Network Marketing (MLM), duplication, recruitment",
+    "avatar": "🕸️",
+    "description": "Globalny autorytet w dziedzinie marketingu sieciowego. Koncentruje się na profesjonalizacji branży, prostych systemach duplikacji, budowaniu zaufania i rekrutacji liderów."
+  },
+  {
+    "id": "john_maxwell",
+    "name": "John C. Maxwell",
+    "specialty": "Leadership, organizational culture, people development",
+    "avatar": "👑",
+    "description": "Mistrz przywództwa. Wskazuje, że wszystko zaczyna się i kończy na liderach. Skupia się na rozwoju charakteru, budowaniu kultury organizacyjnej i prawie pokrywy."
+  },
+  {
+    "id": "robert_cialdini",
+    "name": "Robert Cialdini",
+    "specialty": "Persuasion, social proof, influence science",
+    "avatar": "🧠",
+    "description": "Naukowiec od perswazji. Wykorzystuje 6 (lub 7) zasad wpływu społecznego (wzajemność, konsekwencja, dowód społeczny, sympatia, autorytet, niedostępność, jedność) w marketingu."
+  },
+  {
+    "id": "daniel_kahneman",
+    "name": "Daniel Kahneman",
+    "specialty": "Cognitive biases, System 1 vs. System 2, decision science",
+    "avatar": "⚖️",
+    "description": "Analizuje błędy poznawcze, mechanizmy podejmowania decyzji w warunkach niepewności i ocenia pomysły przez pryzmat unikania strat i heurystyk."
+  },
+  {
+    "id": "amos_tversky",
+    "name": "Amos Tversky",
+    "specialty": "Cognitive psychology, framing effects, mathematical psychology",
+    "avatar": "🧩",
+    "description": "Najbliższy współpracownik Kahnemana. Analizuje teorię perspektywy, efekt sformułowania (framing) oraz heurystyki reprezentatywności i dostępności w ocenie ryzyka."
+  },
+  {
+    "id": "richard_thaler",
+    "name": "Richard Thaler",
+    "specialty": "Nudge theory, mental accounting, consumer choice architecture",
+    "avatar": "🎯",
+    "description": "Laureat Nagrody Nobla. Pokazuje, jak drobne bodźce (nudges) i architektura wyboru mogą drastycznie zmienić decyzje zakupowe i zachowania użytkowników."
+  },
+  {
+    "id": "dan_ariely",
+    "name": "Dan Ariely",
+    "specialty": "Predictable irrationality, pricing psychology, honesty systems",
+    "avatar": "💡",
+    "description": "Bada systematycznie irracjonalne zachowania konsumenckie. Wyjaśnia siłę darmowych ofert, efekt zakotwiczenia ceny oraz psychologię motywacji i uczciwości."
+  },
+  {
+    "id": "chris_voss",
+    "name": "Chris Voss",
+    "specialty": "Negotiation, tactical empathy, high-stakes communication",
+    "avatar": "🗣️",
+    "description": "Były negocjator zakładników FBI. Uczy taktycznej empatii, zadawania pytań kalibrowanych, etykietowania emocji i unikania kompromisów za wszelką cenę."
+  },
+  {
+    "id": "bill_gates",
+    "name": "Bill Gates",
+    "specialty": "Systemic scale, long-term strategy, software architecture",
+    "avatar": "💻",
+    "description": "Skupia się na systemowym podejściu do globalnych wyzwań, długoterminowym planowaniu strategicznym, tworzeniu ekosystemów i standaryzacji rozwiązań."
+  },
+  {
+    "id": "sam_altman",
+    "name": "Sam Altman",
+    "specialty": "AI agents, automation, hyper-growth, venture scale",
+    "avatar": "🤖",
+    "description": "Lider w dziedzinie sztucznej inteligencji. Doradza jak budować rozwiązania oparte na autonomicznych agentach AI, maksymalnej automatyzacji i agresywnym tempie wzrostu."
+  },
+  {
+    "id": "robert_kiyosaki",
+    "name": "Robert Kiyosaki",
+    "specialty": "Cash flow, asset building, financial leverage",
+    "avatar": "💰",
+    "description": "Autor Bogatego Ojca. Koncentruje się na przepływach pieniężnych (cashflow), odróżnianiu aktywów od pasywów, budowaniu systemów biznesowych, które działają bez Twojego bezpośredniego udziału."
+  },
+  {
+    "id": "richard_branson",
+    "name": "Richard Branson",
+    "specialty": "Branding, customer delight, bold risk-taking",
+    "avatar": "🎈",
+    "description": "Ikona przedsiębiorczości. Doradza w obszarze budowania silnej, wyrazistej marki osobistej i firmowej, dbania o wyjątkowe doświadczenia klienta oraz odważnego wchodzenia na nowe rynki."
+  }
+]

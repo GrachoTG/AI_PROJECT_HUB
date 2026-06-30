@@ -1,0 +1,9 @@
+[
+  {
+    "id": "intro_hub",
+    "title": "System Zarządzania Kontekstem AI",
+    "category": "Standardy Pracy",
+    "content": "# System Zarządzania Kontekstem AI\n\nWitaj w firmowej Wikipedii! Ten system służy do zabezpieczenia ciągłości projektów realizowanych za pomocą modeli AI w warunkach ograniczonego okna kontekstowego.\n\n## Główne Zasady\n1. **Zasada 55%**: Gdy zajętość kontekstu bieżącej rozmowy przekracza 55%, generowany jest plik `NEXT_CHAT_SUMMARY.md`. Przenosimy go do nowej sesji, aby zachować ciągłość.\n2. **Szorstka Miłość**: Żadnego głaskania po plecach, tylko brutalne fakty, analizy i alternatywy.\n3. **Baza Obsidian**: Naszą ostateczną bazą prawdy jest lokalny sejf Obsidian (`AI_PROJECT_HUB`). Pliki generowane w tym asystencie powinny być synchronizowane z tym sejfem.\n",
+    "lastUpdated": "2026-06-27T13:21:17Z"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "name": "Gregor Academy Recruitment Pipeline (Stage 1 & 2)",
+  "nodes": [
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "documentId": {
+          "__rl": true,
+          "value": "1rDvjaneoaFPi75Xzgc3u2fX95IPqaIZ3T0xKLegig3I",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "Zapisy",
+          "mode": "name"
+        },
+        "event": "rowAdded",
+        "options": {}
+      },
+      "id": "e81f72d4-1f92-49bd-9db3-7ab61234abcd",
+      "name": "Google Sheets Trigger",
+      "type": "n8n-nodes-base.googleSheetsTrigger",
+      "typeVersion": 1,
+      "position": [
+        250,
+        240
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "YOUR_GOOGLE_SHEETS_CREDENTIAL_ID",
+          "name": "Google Sheets OAuth2 Account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/ga/calculate",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"studentCategory\": \"{{ $json.studentCategory || 'others' }}\",\n  \"selectedWeekday\": {{ parseInt($json.selectedWeekday) || 1 }},\n  \"studentType\": \"{{ $json.studentType || 'new' }}\",\n  \"groupSize\": \"{{ $json.groupSize || '4-8' }}\",\n  \"courseCount\": \"{{ $json.courseCount || '1' }}\",\n  \"installmentCount\": {{ parseInt($json.installmentCount) || 10 }},\n  \"payDay\": {{ parseInt($json.payDay) || 15 }},\n  \"discounts\": {\n    \"earlyBird\": \"{{ $json.earlyBird || 'none' }}\",\n    \"gala\": {{ $json.gala === 'true' || $json.gala === true }},\n    \"family\": {{ $json.family === 'true' || $json.family === true }}\n  }\n}",
+        "options": {}
+      },
+      "id": "890fa4d1-cf1b-419b-a3be-123456789abc",
+      "name": "HTTP Request (Calculate GA)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [
+        470,
+        240
+      ]
+    }
+  ],
+  "connections": {
+    "Google Sheets Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request (Calculate GA)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {}
+}

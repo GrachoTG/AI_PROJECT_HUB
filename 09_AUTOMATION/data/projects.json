@@ -1,0 +1,80 @@
+[
+  {
+    "id": "lr_health_beauty",
+    "name": "LR Health & Beauty",
+    "type": "MLM",
+    "industry": "Health & Beauty",
+    "description": "Firma oparta o model MLM w branży Health & Beauty. Współpraca z niemiecką firmą LR Health & Beauty, budowanie wielopoziomowych zespołów partnerów.",
+    "objectives": [
+      "Budowa stabilnego i zaangażowanego wielopoziomowego zespołu partnerów.",
+      "Maksymalizacja sprzedaży produktów prozdrowotnych i pielęgnacyjnych.",
+      "Duplikacja systemów rekrutacji i wdrożenia nowych partnerów."
+    ],
+    "status": "active"
+  },
+  {
+    "id": "votum_sa",
+    "name": "VOTUM SA",
+    "type": "Partnership",
+    "industry": "Legal / Financial Services",
+    "description": "Pomoc frankowiczom w unieważnianiu kredytów walutowych, dochodzenie roszczeń z Sankcji Kredytu Darmowego (SKD) oraz odszkodowań za służebność przesyłu.",
+    "objectives": [
+      "Pozyskiwanie klientów z kredytami frankowymi lub kwalifikujących się do SKD.",
+      "Edukacja rynku na temat praw konsumenckich i możliwości odzyskania środków.",
+      "Budowa sieci polecającej dla usług prawno-finansowych."
+    ],
+    "status": "active"
+  },
+  {
+    "id": "gold_subscription",
+    "name": "Fizyczne Złoto (Abonament)",
+    "type": "MLM / E-commerce",
+    "industry": "Precious Metals / Wealth Management",
+    "description": "Sprzedaż fizycznego złota w modelu abonamentowym przy użyciu struktury MLM.",
+    "objectives": [
+      "Budowa struktur sprzedaży abonamentów na złoto fizyczne.",
+      "Promowanie długoterminowego oszczędzania w metalach szlachetnych.",
+      "Stworzenie przejrzystego systemu motywacyjnego dla liderów struktur."
+    ],
+    "status": "active"
+  },
+  {
+    "id": "energy_cooperative",
+    "name": "Spółka / Spółdzielnia Energetyczna",
+    "type": "Enterprise / Cooperative",
+    "industry": "Renewable Energy / Utilities",
+    "description": "Sprzedaż prądu wytworzonego przez elektrownie fotowoltaiczne członków. Docelowe stworzenie systemu rozliczeń dla odbiorców oraz wdrożenie działań marketingowych zapewniających rozwój.",
+    "objectives": [
+      "Stworzenie niezawodnego i zautomatyzowanego systemu rozliczeń prądu dla odbiorców.",
+      "Pozyskiwanie nowych członków spółdzielni (zarówno producentów, jak i odbiorców).",
+      "Wdrożenie marketingu regionalnego i krajowego budującego pozycję spółki."
+    ],
+    "status": "active"
+  },
+  {
+    "id": "gregor_academy",
+    "name": "GREGOR ACADEMY",
+    "type": "Local Business / Education",
+    "industry": "Education / Language School",
+    "description": "Szkoła językowa w Iławie. Odpowiedzialność za zarządzanie operacyjne, promocję, rekrutację uczniów, rozliczenia, marketing oraz globalny rozwój szkoły.",
+    "objectives": [
+      "Zwiększenie bazy uczniów poprzez precyzyjne kampanie lokalne i online.",
+      "Automatyzacja systemów rozliczeń i rekrutacji.",
+      "Skalowanie i przygotowanie modelu do ekspansji franczyzowej lub online."
+    ],
+    "status": "active"
+  },
+  {
+    "id": "pru_life_insurance",
+    "name": "PRU (Plany na Życie i Emerytalne)",
+    "type": "MLM / Financial Advisory",
+    "industry": "Insurance / Wealth Management",
+    "description": "Sprzedaż planów na życie i emerytalnych w ramach wielopoziomowego zespołu partnerów (MLM).",
+    "objectives": [
+      "Budowanie i szkolenie zespołów doradców finansowo-ubezpieczeniowych.",
+      "Podnoszenie świadomości emerytalnej i ubezpieczeniowej wśród klientów.",
+      "Zapewnienie wysokiej retencji klientów poprzez dopasowane plany finansowe."
+    ],
+    "status": "active"
+  }
+]
