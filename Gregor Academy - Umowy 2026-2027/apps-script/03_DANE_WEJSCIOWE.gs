@@ -29,6 +29,7 @@ function gaCreateInputSheet() {
     'Poziom',
     'Liczba_rat',
     'Cena_miesięczna',
+	'Liczba_miesięcy',
     'Rabat',
     'Uwagi',
     'Status'
