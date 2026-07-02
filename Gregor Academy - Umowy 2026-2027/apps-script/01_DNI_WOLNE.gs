@@ -15,8 +15,10 @@ function onOpen() {
     .addItem('02. Utwórz / odśwież konfigurację', 'gaCreateConfigSheet')
     .addItem('03. Utwórz / odśwież dane wejściowe', 'gaCreateInputSheet')
     .addItem('04. Dodaj walidacje danych', 'gaApplyInputValidations')
+    .addItem('05. Oblicz wartości finansowe', 'gaCalculateInputSheetValues')
     .addToUi();
 }
+
 
 /**
  * Tworzy lub odświeża arkusz Dni_wolne_26_27.
