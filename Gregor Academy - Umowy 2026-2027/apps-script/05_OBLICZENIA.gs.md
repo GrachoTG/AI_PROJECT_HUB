@@ -96,7 +96,7 @@ function gaCalculateInputSheetValues() {
   });
 
   const requiredHeaders = [
-    'ID_ucznia',
+    'ID_Ucznia',
     'Cena_miesięczna',
     'Liczba_miesięcy',
     'Rabat',
