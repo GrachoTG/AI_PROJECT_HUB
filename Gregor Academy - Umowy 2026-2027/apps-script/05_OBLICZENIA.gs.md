@@ -137,7 +137,7 @@ function gaCalculateInputSheetValues() {
   for (let i = 1; i < refreshedData.length; i++) {
     const row = refreshedData[i];
 
-    const studentId = row[refreshedCol['ID_ucznia']];
+    const studentId = row[refreshedCol['ID_Ucznia']];
     const status = row[refreshedCol['Status']];
 
     if (!studentId || status === 'ANULOWANY') {
