@@ -12,7 +12,9 @@ function onOpen() {
   SpreadsheetApp.getUi()
     .createMenu('GA Umowy')
     .addItem('01. Utwórz / odśwież dni wolne', 'gaCreateDaysOffSheet')
-	.addItem('02. Utwórz / odśwież konfigurację', 'gaCreateConfigSheet')
+    .addItem('02. Utwórz / odśwież konfigurację', 'gaCreateConfigSheet')
+    .addItem('03. Utwórz / odśwież dane wejściowe', 'gaCreateInputSheet')
+    .addItem('04. Dodaj walidacje danych', 'gaApplyInputValidations')
     .addToUi();
 }
 
