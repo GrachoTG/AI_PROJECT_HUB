@@ -191,3 +191,18 @@ v0.5.0
 roundMoney_
 gaTestCalculateContractValues
 
+## Status projektu
+
+Aktualna wersja: `v0.5.1`
+
+Stan: po dodaniu i przetestowaniu obsługi kolumny `Liczba_miesięcy`.
+
+Ostatnio wykonane:
+- poprawiono zgodność nazwy kolumny `ID_Ucznia` w obliczeniach,
+- dodano kolumnę `Liczba_miesięcy` w arkuszu `Dane_wejsciowe_26_27`,
+- dodano nagłówek `Liczba_miesięcy` w pliku `03_DANE_WEJSCIOWE.gs`,
+- dodano walidację kolumny `Liczba_miesięcy` w pliku `04_WALIDACJE.gs`,
+- uruchomiono walidacje danych,
+- uruchomiono obliczenia finansowe.
+
+Aktualny etap: `v0.5.1` zamknięta.
