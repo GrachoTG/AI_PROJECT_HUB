@@ -180,3 +180,8 @@ Utworzyć arkusz danych wejściowych uczniów i kursów.
 `v0.3.0`
 - Za pomocą funkcji `gaCreateInputSheet`,
 - Dodano arkusz `Dane_wejsciowe_26_27`.
+
+v0.4.0
+- utworzono moduł walidacji - 04_WALIDACJE.gs
+- oraz funkcję - gaApplyInputValidations
+
