@@ -185,3 +185,9 @@ v0.4.0
 - utworzono moduł walidacji - 04_WALIDACJE.gs
 - oraz funkcję - gaApplyInputValidations
 
+v0.5.0
+- utworzono moduł - 05_OBLICZENIA.gs
+- oraz funkcję -  gaCalculateContractValues_
+roundMoney_
+gaTestCalculateContractValues
+
