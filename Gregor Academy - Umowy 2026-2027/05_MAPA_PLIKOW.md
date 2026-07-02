@@ -226,12 +226,12 @@ gregor-academy-umowy-2026-2027/
 
 ## 10. Historia zmian pliku
 
-| Wersja | Data | Zmiana |
-|---|---|---|
-| v0.1.0 | 2026-07-02 | Utworzenie początkowej mapy plików. |
-| v0.4.0 | 2026-07-02 | Dodanie informacji o walidacjach i modułach Apps Script. |
-| v0.5.0 | 2026-07-02 | Dodanie modułu `05_OBLICZENIA.gs`, kolumn finansowych oraz logiki obliczeń. |
-| v0.5.1-dev | 2026-07-02 | Dodanie kolumny `Liczba_miesięcy` do danych wejściowych i mapy plików. |
+| Wersja     | Data       | Zmiana                                                                      |
+| ---------- | ---------- | --------------------------------------------------------------------------- |
+| v0.1.0     | 2026-07-02 | Utworzenie początkowej mapy plików.                                         |
+| v0.4.0     | 2026-07-02 | Dodanie informacji o walidacjach i modułach Apps Script.                    |
+| v0.5.0     | 2026-07-02 | Dodanie modułu `05_OBLICZENIA.gs`, kolumn finansowych oraz logiki obliczeń. |
+| v0.5.1-dev | 2026-07-02 | Dodanie kolumny `Liczba_miesięcy` do danych wejściowych i mapy plików.      |
 
 | `apps-script/05_OBLICZENIA.gs` | Utworzony | Oblicza wartości finansowe umowy: cena całkowita, rabat, kwota po rabacie, rata |
 
