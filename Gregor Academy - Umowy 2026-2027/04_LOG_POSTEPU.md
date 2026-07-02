@@ -99,3 +99,15 @@ Następny krok:
 - Dodano listy wyboru dla kolumn: `Typ_kursu`, `Przedmiot`, `Poziom`, `Liczba_rat`, `Status`.
 - Dodano format kwoty dla kolumn: `Cena_miesięczna`, `Rabat`.
 - Dodano pozycję menu `04. Dodaj walidacje danych`.
+## 2026-07-02 — v0.5.0
+
+### Dodano
+- Utworzono plik `05_OBLICZENIA.gs`.
+- Dodano funkcję `gaCalculateContractValues_`.
+- Dodano funkcję pomocniczą `roundMoney_`.
+- Dodano funkcję testową `gaTestCalculateContractValues`.
+- Dodano obliczanie: ceny całkowitej, rabatu, kwoty po rabacie i wysokości raty.
+
+### Zweryfikowano
+- Uruchomiono test `gaTestCalculateContractValues`.
+- Wynik testowy dla danych `350 × 10 - 200 / 10` zwrócił ratę `330`.
