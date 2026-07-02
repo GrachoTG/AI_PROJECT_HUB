@@ -90,3 +90,12 @@ Następny krok:
 
 ### Poprawiono
 - Dodano `INPUT: 'Dane_wejsciowe_26_27'` do `GA_CONFIG.SHEETS`.
+## 2026-07-02 — v0.4.0
+
+### Dodano
+- Utworzono plik `04_WALIDACJE.gs`.
+- Dodano funkcję `gaApplyInputValidations`.
+- Dodano walidacje danych dla arkusza `Dane_wejsciowe_26_27`.
+- Dodano listy wyboru dla kolumn: `Typ_kursu`, `Przedmiot`, `Poziom`, `Liczba_rat`, `Status`.
+- Dodano format kwoty dla kolumn: `Cena_miesięczna`, `Rabat`.
+- Dodano pozycję menu `04. Dodaj walidacje danych`.
