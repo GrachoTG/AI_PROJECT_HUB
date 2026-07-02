@@ -177,3 +177,6 @@ Wykonano:
 ## Następny krok
 
 Utworzyć arkusz danych wejściowych uczniów i kursów.
+`v0.3.0`
+- Za pomocą funkcji `gaCreateInputSheet`,
+- Dodano arkusz `Dane_wejsciowe_26_27`.

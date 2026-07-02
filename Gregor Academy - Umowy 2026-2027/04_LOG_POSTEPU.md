@@ -80,3 +80,13 @@ Status:
 Następny krok:
 
 - przygotować arkusz danych wejściowych uczniów i kursów
+## 2026-07-02 — v0.3.0
+
+### Dodano
+- Utworzono plik `03_DANE_WEJSCIOWE.gs`.
+- Dodano funkcję `gaCreateInputSheet`.
+- Dodano arkusz `Dane_wejsciowe_26_27`.
+- Dodano pozycję menu `03. Utwórz / odśwież dane wejściowe`.
+
+### Poprawiono
+- Dodano `INPUT: 'Dane_wejsciowe_26_27'` do `GA_CONFIG.SHEETS`.

@@ -109,4 +109,5 @@ Po każdym zakończonym etapie należy aktualizować:
 3. w razie potrzeby `03_DECYZJE.md`
 4. w razie potrzeby `05_MAPA_PLIKOW.md`
 ```
+| `apps-script/03_DANE_WEJSCIOWE.gs` | Utworzony | Tworzy arkusz `Dane_wejsciowe_26_27` z danymi uczniów i kursów |
 

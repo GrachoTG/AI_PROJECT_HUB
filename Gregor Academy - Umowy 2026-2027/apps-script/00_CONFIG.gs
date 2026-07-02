@@ -9,12 +9,20 @@ const GA_CONFIG = {
   VERSION: 'v0.1.0',
 
   SCHOOL_YEAR: '2026/2027',
+  SHEETS: {
+  DAYS_OFF: 'Dni_wolne_26_27',
+  LOG: 'GA_Log',
+  SETTINGS: 'Konfiguracja_26_27',
+  INPUT: 'Dane_wejsciowe_26_27'
+},
+
 
   SHEETS: {
     SOURCE_SIGNUPS: 'Zapisy',
     DAYS_OFF: 'Dni_wolne_26_27',
     COURSE_TYPES: 'Typy_kursow_26_27',
     SETTINGS: 'Konfiguracja_26_27',
+    INPUT: 'Dane_wejsciowe_26_27',
     CONTRACT_TEMPLATE: 'Wzór',
     CONTRACT_REGISTER: 'Umowy_rejestr',
     LOG: 'GA_Log'
