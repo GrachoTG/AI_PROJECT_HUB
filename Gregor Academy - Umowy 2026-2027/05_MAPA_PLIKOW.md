@@ -235,3 +235,23 @@ gregor-academy-umowy-2026-2027/
 
 | `apps-script/05_OBLICZENIA.gs` | Utworzony | Oblicza wartości finansowe umowy: cena całkowita, rabat, kwota po rabacie, rata |
 
+### `04_WALIDACJE.gs`
+
+Wersja: `v0.5.1`
+
+Odpowiedzialność:
+- nakładanie walidacji danych w arkuszu `Dane_wejsciowe_26_27`,
+- walidacja pól słownikowych:
+  - `Typ_kursu`,
+  - `Przedmiot`,
+  - `Poziom`,
+  - `Liczba_rat`,
+  - `Status`,
+- walidacja pól liczbowych:
+  - `Cena_miesięczna` — format kwotowy,
+  - `Liczba_miesięcy` — liczba od `1` do `12`,
+  - `Rabat` — liczba od `0` do `1000`,
+- formatowanie kolumn finansowych i liczbowych.
+
+Ostatnia zmiana:
+- dodano obsługę i walidację kolumny `Liczba_miesięcy`.
