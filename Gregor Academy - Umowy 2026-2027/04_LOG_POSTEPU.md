@@ -111,3 +111,33 @@ Następny krok:
 ### Zweryfikowano
 - Uruchomiono test `gaTestCalculateContractValues`.
 - Wynik testowy dla danych `350 × 10 - 200 / 10` zwrócił ratę `330`.
+## Zadanie 37 — walidacja kolumny `Liczba_miesięcy`
+
+Dodano walidację danych dla kolumny `Liczba_miesięcy` w pliku `04_WALIDACJE.gs`.
+
+Zakres walidacji:
+- liczba od `1` do `12`,
+- wartości spoza zakresu są odrzucane.
+
+Zaktualizowano pełną zawartość pliku `04_WALIDACJE.gs`.
+
+Uruchomiono z menu:
+
+`GA Umowy → 04. Nałóż walidacje danych`
+
+Status: wykonane.
+
+---
+
+## Zadanie 38 — test obliczeń finansowych
+
+Uruchomiono obliczenia finansowe z menu:
+
+`GA Umowy → 05. Oblicz wartości finansowe`
+
+Wynik:
+
+- skrypt wykonał się poprawnie,
+- nie zgłoszono błędu po dodaniu kolumny `Liczba_miesięcy`.
+
+Status: wykonane.
