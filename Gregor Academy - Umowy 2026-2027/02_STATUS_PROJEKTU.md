@@ -1,5 +1,11 @@
 # Status projektu — Gregor Academy Umowy 2026/2027
 
+## ❌ ARCHIWALNY (2026-07-20)
+
+Porzucony na rzecz równoległego systemu `FOrm_zapis/apps-script/Umowy.gs` (repo `D:\moje\ga\zapisy`), powiązanego z innym arkuszem Google (zakładka "Zgłoszenia", nie "Zapisy"). Ten projekt zatrzymał się na v0.5.1 (patrz historia niżej) ok. 2026-06-30/07-02 i NIE jest kontynuowany. Potwierdzone przez użytkownika. Aktualny stan systemu umów: `D:\moje\ga\zapisy\GA_HUB.md`.
+
+---
+
 ## Aktualna wersja
 
 v0.0.1

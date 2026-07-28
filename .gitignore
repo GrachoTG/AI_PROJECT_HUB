@@ -20,6 +20,7 @@ desktop.ini
 
 # Local backups inside vault
 99_BACKUPS/
+AleProstaIluzja/
 
 # Environment variables and secrets
 .env
