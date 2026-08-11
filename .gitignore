@@ -59,3 +59,4 @@ pnpm-debug.log*
 dist/
 build/
 .cache/
+Zasoby.md
