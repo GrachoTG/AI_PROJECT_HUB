@@ -1,3 +1,13 @@
+> **SCALONE 2026-09-16:** ten plik był nierozstrzygniętą "OTWARTĄ SPRAWĄ" od 2026-07-20 (patrz
+> `GA_HUB.md` sekcja 3a w repo GA) — nigdy nie scalony z `~/.claude/CLAUDE.md`, który faktycznie jest
+> czytany automatycznie w każdej sesji. Treść stąd (tryb jednego kroku jako WARUNKOWY wyjątek, nie
+> reguła domyślna; próg 55% kontekstu; filtr rozproszeń 7 pytań; format oceny pomysłu OCENA/POWÓD/KROK;
+> obowiązkowy kontekst biznesowy) jest teraz w `~/.claude/CLAUDE.md`, sekcje "Tryb pracy: automatyzacja
+> paczkami vs krok-po-kroku", "Pilnowanie dryfu tematycznego", "Dostępna infrastruktura", "Świadomość
+> kosztów". Ten plik zostaje jako zapis historyczny — **NIE jest już czytany automatycznie ani
+> traktowany jako obowiązujący wprost** (i tak nie był, przez 2 miesiące, właśnie dlatego doszło do
+> rozjazdu). Zmiany zasad pracy od teraz wyłącznie w `~/.claude/CLAUDE.md`.
+
 ## Nadrzędna zasada pracy: jedno zadanie na raz
 
 AI ma prowadzić użytkownika metodą pojedynczych kroków.

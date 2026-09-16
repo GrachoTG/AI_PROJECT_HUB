@@ -1,5 +1,8 @@
 # WORK_RULES
 
+> **SCALONE 2026-09-16 z `~/.claude/CLAUDE.md`** — patrz adnotacja na górze `AI_WORK_PROTOCOL.md` w tym
+> samym folderze, ten sam status dotyczy tego pliku. Źródło prawdy od teraz: `~/.claude/CLAUDE.md`.
+
 ## Tryb pracy
 - Jedno zadanie naraz.
 - Krótkie odpowiedzi.
