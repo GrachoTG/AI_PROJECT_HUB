@@ -64,6 +64,16 @@ kontrolne: czy 30k-tokenowy prompt startowy w ogóle jest używany, skoro `CLAUD
 punktu-wznowienia robią to taniej? Jeśli nie używany → archiwum. Naprawić kodowanie `prepare_new_chat.ps1`
 (zapis UTF-8) tylko jeśli skrypt zostaje.
 
+**R5a. Uzupełnienie 2026-09-22** (patrz pamięć [[feedback-reusable-tools-not-reread-context]] i
+[[reference-llm-routing-and-rag-2026]] — powstałe w wątku Rozliczeń, ale wprost dotyczą tego projektu): `build_context.py`
+to w istocie własna, ręczna próba rozwiązania DOKŁADNIE tego samego problemu co pytanie z R5 — "jak nie czytać
+wszystkiego od nowa" — ale metodą "generuj coraz większy jeden plik", nie metodą pamięci/snippetów/RAG. To wzmacnia
+werdykt: zamiast dokańczać `script_core`/`script_utility`, sprawdzić najpierw, czy sam cel (tani start nowej sesji)
+nie jest już osiągnięty taniej przez istniejące dziś mechanizmy (memory + pointer docs). RAG/baza wektorowa NIE są
+dziś uzasadnione dla samego vaulta (za mało, za bardzo ustrukturyzowane) — ALE oryginalna wizja z `Centrum Dowodzenie
+- kontynuacja.txt` (nagrania rozmów, luźne myśli bez naturalnego pliku-wskaźnika) to najlepszy kandydat w całym
+portfolio usera na realne zastosowanie RAG, jeśli/gdy projekt do tego dojrzeje — nie teraz, nie jako pierwszy krok.
+
 **R6. Aplikacja (D) `ai-project-hub-&-context-manager`:** domyślny werdykt = ARCHIWUM (nieużywana, wymaga
 `GEMINI_API_KEY`, dubluje vault). Zostawić tylko jeśli user poda konkretne uzasadnienie (patrz bezpiecznik).
 
@@ -157,3 +167,4 @@ reguły z `CLAUDE.md`: kopia gdzie indziej + zweryfikowany dostęp + nie jedyna 
 | Data | Co zrobiono | Co dalej |
 |---|---|---|
 | 2026-09-20 | Audyt + ten plik. Nic nie zmieniono w systemach. | Sekcja 6, krok 1. |
+| 2026-09-21 | User wybrał D6 = rozliczenia najpierw. Remanent ZAWIESZONY. Zdiagnozowany prawdziwy duplikat (`WczytajWyciag.gs` v1.3 w repo GA, nie wdrożony), utworzone konto usługowe GCP do odczytu arkuszy — szczegóły w `GA/System_Rozliczen/PLAN.md` sekcja 12. Inwentarz GCP (5 projektów: GA Rekrutacja, n8n-integration, Hermes Agent Automation, My Project, ArchitektFinansowy; 3 nieużywane od miesięcy; w GA Rekrutacja nieużywane API Maps/reCAPTCHA/App Engine) — do posprzątania w remanencie, NIC nie usunięte. | Domknąć test v1.3 → wrócić do sekcji 6 remanentu. |
